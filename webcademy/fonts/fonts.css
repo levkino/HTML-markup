@@ -1,0 +1,22 @@
+@font-face {
+  font-family: AC Line; /* Имя шрифта */
+  src: url(./AC_Line.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Alfios; /* Имя шрифта */
+  src: url(./Alfios_R.otf); /* Путь к файлу со шрифтом */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Alfios; /* Имя шрифта */
+  src: url(./Alfios_I.otf); /* Путь к файлу со шрифтом */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Cleanvel; /* Имя шрифта */
+  src: url(./Cleanvel.TTF); /* Путь к файлу со шрифтом */
+  font-weight: 300;
+}
