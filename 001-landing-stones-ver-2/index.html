@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/animate/animate.css">
+  <link rel="stylesheet" href="libs/jquery/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/roboto_font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__back">
+          <div class="header__contacts">
+            <a class="header__logo">
+              <img src="img/logo-mini.png" alt="">
+            </a>
+            <div class="header__address contact-card">
+              <img src="img/geo.png" alt="" class="contact-card__img">
+              <div class="contact-card__text">
+                г. Санкт-Петербург,<br/>
+                Большой просп. В.О., 80,<br/>
+                БЦ "Сенатор"
+              </div>
+            </div>
+            <div class="header__schedule contact-card">
+              <img src="img/clock.png" alt="" class="contact-card__img">
+              <div class="header__schedule-text contact-card__text">
+                <span>Пн-Пт 9:00 - 18:00</span>
+                <a class="white-link d-inline-block mt-1" href="tel:78123220940">+7 (812) 322-09-40</a><br/>
+                <a class="white-link" href="tel:78123223440">+7 (812) 322-34-40</a>
+              </div>
+            </div>
+            <div class="header__phone contact-card">
+              <img src="img/phoneWhite.png" alt="" class="contact-card__img">
+              <div class="contact-card__text">
+                <a class="white-link contact-card__main-phone" href="tel:79992217000">+7 (999) 221-70-00</a><br/>
+                <a class="white-link d-inline-block mt-2 ml-5" href="mailto:stones@petromramor.ru">stones@petromramor.ru</a>
+              </div>
+            </div>
+            <div class="header__call blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</div>
+          </div>
+        </div>
+        <div class="header__menu white-link">
+          <a class="header__menu-item" href="#productions">Изделия</a>
+          <a class="header__menu-item" href="#catalog">Каталог камня</a>
+          <a class="header__menu-item" href="#production">Производство</a>
+          <!-- <a class="header__menu-item header__menu-item-active" href="#">Объекты</a> -->
+          <a class="header__menu-item" href="#map">Контакты</a>
+        </div>
+        <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ ДЛЯ СТРОИТЕЛЬСТВА И ОТДЕЛКИ</h1>
+        <div class="header__line animate__animated animate__fadeInUp"></div>
+        <div class="header__subtitle animate__animated animate__fadeInUp">с 2002 года</div>
+        <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Расчитать стоимость</div>
+        <a class="header__arrow animate__animated animate__fadeInUp" href="#advantages"></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="advantages" class="section advantages">
+        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">Наши преимущества</h1>
+        <div class="advantages__items wow animate__animated animate__fadeInUp">
+          <div class="advantage-items__line"></div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/branch.png" alt="">
+            </div>
+            <div class="advantage-item__text">Два собственных завода в Ленобласти</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/conveyor.png" alt="">
+            </div>
+            <div class="advantage-item__text">Новое итальянское оборудование</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_quality" src="img/document.png" alt="">
+            </div>
+            <div class="advantage-item__text">Качество соответствует ГОСТ</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_dev" src="img/individual.png" alt="">
+            </div>
+            <div class="advantage-item__text">Разработка индивидуальных проектов</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/warehouse.png" alt="">
+            </div>
+            <div class="advantage-item__text">Объем производства более 8 000 м² в месяц</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_car" src="img/truck.png" alt="">
+            </div>
+            <div class="advantage-item__text">Доставка по всей России</div>
+          </div>
+        <div/>
+      </section>
+
+      <section id="productions" class="section productions">
+        <h1 class="section__header productions__header wow animate__animated animate__fadeInUp">Наша продукция</h1>
+        <div class="productions__items production wow animate__animated animate__fadeInUp">
+          <div class="production__row">
+            <div class="production__column production__shadow-first">
+              <div class="production__back-first"></div>
+              <a class="production__item-big">
+                <img src="img/production1.jpg" alt="">
+                <div class="production__detail">
+                  <span>Подробнее</span>
+                </div>
+                <div class="production__text">
+                  Облицовочные плиты
+                </div>
+              </a>
+            </div>
+            <div class="production__column">
+              <div class="production__back-second"></div>
+              <div class="row justify-content-between">
+                <div class="col flex-grow-0">
+                  <a class="production__item-min">
+                    <img src="img/production2.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Плиты мощения
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom">
+                    <img src="img/production4.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Бордюры
+                    </div>
+                  </a>
+                </div>
+                <div class="col flex-grow-0">
+                  <a class="production__item-long">
+                    <img src="img/production12.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Изделия из известняка
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="production__column production__last-column">
+              <div class="production__back-third"></div>
+              <a class="production__item-min production__item-min">
+                <img src="img/production3.jpg" alt="">
+                <div class="production__detail">
+                  <span>Подробнее</span>
+                </div>
+                <div class="production__text">
+                  Брусчатка
+                </div>
+              </a>
+              <a class="production__item-min production__item-min production__bottom">
+                <img src="img/production5.jpg" alt="">
+                <div class="production__detail">
+                  <span>Подробнее</span>
+                </div>
+                <div class="production__text">
+                  Тактильные плиты
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="production__row">
+            <div class="production__column">
+              <div class="production__back-forth"></div>
+              <div class="row justify-content-between">
+                <div class="col flex-grow-0">
+                  <a class="production__item-min">
+                    <img src="img/production6.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Лестницы и балюстрады
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom">
+                    <img src="img/production8.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Столешницы и подоконники
+                    </div>
+                  </a>
+                </div>
+                <div class="col flex-grow-0">
+                  <a class="production__item-min">
+                    <img src="img/production7.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Фонтаны и памятники
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom" data-fancybox data-src="#popup_all" onclick="loadXMLDocBranche('http://stones.petromramor.ru/api/textload_popup.php?table=our_production_v2&id=9')">
+                    <img src="img/production9.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Слэбы и заготовки
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="production__column">
+              <div class="production__back-firth"></div>
+              <a class="production__item-big">
+                <img src="img/production10.jpg" alt="">
+                <div class="production__detail">
+                  <span>Подробнее</span>
+                </div>
+                <div class="production__text">
+                  Декоративные изделия
+                </div>
+              </a>
+            </div>
+            <div class="production__column production__last-column">
+              <div class="production__back-six"></div>
+              <a class="production__item-long">
+                <img src="img/production13.jpg" alt="">
+                <div class="production__detail">
+                  <span>Подробнее</span>
+                </div>
+                <div class="production__text">
+                  Колонны
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+       <form class="calc-form mt-5 wow animate__animated animate__fadeInUp" onsubmit="return false">
+          <div class="calc-form__title">Запрос цены</div>
+          <div class="calc-form__question">
+            <label class="calc-form__question-label">Ваш вопрос:</label>
+            <textarea id="calc-question1" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
+          </div>
+          <div class="calc-form__second-row">
+            <div class="calc-form__phone">
+              <label class="calc-form__phone-label">E-mail:</label>
+              <input id="calc-phone1" type="text" class="calc-form__phone-input form-control"></input>
+            </div>
+            <div class="calc-form__file">
+              <label class="calc-form__file-label">Прикрепить файл:</label>
+              <input id="calc-file1" type="file" class="d-none">
+              <div class="calc-form__file-field" onclick="$('#calc-file1').click()">
+                <img class="calc-form__file-img" src="img/fileInput.png" alt="">
+                <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+              </div>
+            </div>
+          </div>
+          <div class="calc-form__third-row">
+            <button class="calc-form__send-button blue-button" onclick="calcRequest(1)">Отправить</button>
+          </div>
+          <div class="calc-form__forth-row">
+            <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
+            <span class="calc-form__whatsapp-number"><span class="gray">+7</span> (999) 221-70-00</span>
+            <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <div class="calc-form__call">
+              <input type="text" class="calc-form__call-input form-control phone-input"/>
+              <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+            </div>
+          </div>
+        </form>
+
+      </section>
+
+      <section id="catalog" class="section catalog">
+        <h1 class="section__header catalog__header wow animate__animated animate__fadeInUp">Каталог натурального камня</h1>
+
+        
+        <div class="tabs">
+          <div class="wow animate__animated animate__fadeInUp">
+            <div class="choose">ВЫБЕРИТЕ ТИП КАМНЯ:</div>
+          </div>
+          <ul class="stoneType tabs__caption wow animate__animated animate__fadeInUp">
+            <li class="active">ГРАНИТ</li>
+            <li>ИЗВЕСТНЯК</li>
+            <li>МРАМОР</li>
+          </ul>
+      
+          <div class="tabs__content active">
+            <div class="stoneBlocks">
+              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ала-Носкуа гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорское гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone3.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone4.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ладожское гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone5.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Дымовский граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone6.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Другорецкое габбро-диабаз</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone7.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Елизовское граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone8.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мансуровский гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ала-Носкуа гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорское гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone3.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone4.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ладожское гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone5.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Дымовский граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone6.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Другорецкое <span>габбро-диабаз</span></div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone7.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Елизовское граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone8.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мансуровский гранит</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tabs__content">
+            <div class="stoneBlocks">
+              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ала-Носкуа гранит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорское гранит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone3.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение гранит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone4.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ладожское гранит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone5.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Дымовский граносиенит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone6.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Другорецкое габбро-диабаз2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone7.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Елизовское граносиенит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone8.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мансуровский гранит2</div>
+                </div>
+              </div>
+              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>2Ала-Носкуа гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>2Каменногорское гранит</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tabs__content">
+            <div class="stoneBlocks">
+              <div class="stoneBlock">
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ала-Носкуа3 гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорское3 гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone3.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение3 гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone4.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ладожское3 гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone5.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Дымовский3 граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone6.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Другорецкое3 габбро-диабаз</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone7.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Елизовское3 граносиенит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone8.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мансуровский3 гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone1.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Ала-Носкуа 3гранит</div>
+                </div>
+              </div>
+              <div class="stoneBlock">
+                <img src="img/stone2.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорское 3гранит</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section scheme">
+        <h1 class="section__header scheme__header wow animate__animated animate__fadeInUp">Схема сотрудничества</h1>
+        <img src="img/scheme.png" alt="" class="scheme__img wow animate__animated animate__fadeInUp">
+        <button class="scheme__button blue-button" data-toggle="modal" data-target="#modal-calc">Расчет стоимости</button>
+      </section>
+
+      <section id="production" class="section production">
+        <h1 class="section__header production__header wow animate__animated animate__fadeInUp">Производство</h1>
+
+        <div class="production__wrapper">
+          <div class="production__gallery mb-5 wow animate__animated animate__fadeInUp">
+            <div>
+              <img src="img/gallery1.jpg" alt="" />
+              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+            </div>
+            <div>
+              <img src="img/gallery2.jpg" alt="" />
+              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+            </div>
+            <div>
+              <img src="img/gallery3.jpg" alt="" />
+              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+            </div>
+            <div>
+              <img src="img/gallery4.jpg" alt="" />
+              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+            </div>
+          </div>
+          <div class="production__desc">
+            Производственная база и склады компании «ПетроМрамор» расположены на собственной территории в пригороде Санкт-Петербурга - городе Всеволожск. Всеволожский Камнеобрабатывающий Завод №1 (ВКЗ-1), расположенный на улице Шишканя, успешно работает с 2002 года и выпускает все виды продукции из гранита и мрамора. С июля 2017 года на территории Промзоны "Кирпичный завод" запущена первая очередь второго завода (ВКЗ-2), специализирующегося на производстве плит мощения, облицовочных плит и строительно-дорожных изделиях.
+            В октябре 2019 запущена вторая очередь на втором заводе.<br/><br/>
+            Современное итальянское оборудование, квалифицированный персонал и применение передовых технологий обработки природного камня позволяют нам производить высококачественные изделия из натурального камня любого уровня сложности, в том числе выполнять заказы, связанные с производством больших объемов изделий широкого ассортимента из гранита и мрамора в сжатые сроки для выполнения комплексных поставок на строительные объекты.
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section certificates">
+        <h1 class="section__header certificates__header wow animate__animated animate__fadeInUp">Сертификаты</h1>
+        <div class="certificates__subtitle wow animate__animated animate__fadeInUp">Вся продукция имеет нужные сертификаты</div>
+
+        <div class="certificates__items mt-3 mb-5 wow animate__animated animate__fadeInUp">
+          <div>
+            <a class="fancybox-button" href="img/certificate1.jpg">
+              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+            </a>
+            <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
+          </div>
+          <div>
+            <a class="fancybox-button" href="img/certificate2.jpg">
+              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+            </a>
+            <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
+          </div>
+          <div>
+            <a class="fancybox-button" href="img/certificate3.jpg">
+              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+            </a>
+            <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
+          </div>
+          <div>
+            <a class="fancybox-button" href="img/certificate4.jpg">
+              <img src="img/certificate4.jpg" alt="" class="certificates__item"/>
+            </a>
+            <span class="certificates__text">Компания "ПетроМрамор" в Торгово-Промышленной палате Санкт-Петербурга</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section clients">
+        <h1 class="section__header clients__header wow animate__animated animate__fadeInUp">Нас выбирают</h1>
+
+        <div class="clients_images wow animate__animated animate__fadeInUp">
+          <img class="clients_image" src="img/client1.jpg" alt="">
+          <img class="clients_image" src="img/client2.jpg" alt="">
+          <img class="clients_image" src="img/client3.jpg" alt="">
+          <img class="clients_image" src="img/client4.jpg" alt="">
+          <img class="clients_image" src="img/client5.jpg" alt="">
+        </div>
+    
+        <div class="clients_request">Отправьте заявку на расчет<br/>стоимости вашего проекта</div>
+
+        <form class="calc-form mt-5 wow animate__animated animate__fadeInUp" onsubmit="return false">
+          <div class="calc-form__question">
+            <label class="calc-form__question-label">Ваш вопрос:</label>
+            <textarea id="calc-question2" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
+          </div>
+          <div class="calc-form__second-row">
+            <div class="calc-form__phone">
+              <label class="calc-form__phone-label">E-mail:</label>
+              <input id="calc-phone2" type="text" class="calc-form__phone-input form-control"></input>
+            </div>
+            <div class="calc-form__file">
+              <label class="calc-form__file-label">Прикрепить файл:</label>
+              <input id="calc-file2" type="file" class="d-none">
+              <div class="calc-form__file-field" onclick="$('#calc-file2').click()">
+                <img class="calc-form__file-img" src="img/fileInput.png" alt="">
+                <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+              </div>
+            </div>
+          </div>
+          <div class="calc-form__third-row">
+            <button class="calc-form__send-button blue-button" onclick="calcRequest(2)">Отправить</button>
+          </div>
+          <div class="calc-form__forth-row">
+            <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
+            <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
+            <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <div class="calc-form__call">
+              <input type="text" class="calc-form__call-input form-control phone-input"/>
+              <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section id="map" class="section map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A00020aaa8342d7776746cd5b9f18518dd1fc79a843e8cf96620fa22158badef3&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>
+        
+        <div class="map__contacts">
+          <div class="map__title">Выставочный зал</div>
+          <img src="img/logo.png" alt="" class="map__logo">
+          <div class="map__address">
+            г. Санкт-Петербург,<br/>
+            Большой проспект<br/>
+            Васильевского острова, 80,<br/>
+            бизнес-центр "Сенатор"</div>
+          <div class="map__phones">
+            <div class="map__phone-main">
+              <a href="tel:79992217000">
+                <img src="img/phoneWhite.png" alt="" class="map__phone-icon">
+                <span class="map__phone-title">+7 (999) 221-70-00</span>
+              </a>
+              <a href="whatsapp://send?phone=79992217000">
+                <img src="img/whatsapp.png" alt="" class="map__phone-whatsapp">
+              </a>
+            </div>
+            <div class="map__phone-others">
+              <a href="tel:78123220940">
+                <span class="map__phone-sub">+7 (812) 322-09-40</span>
+              </a>
+              <a href="tel:78123223440">
+                <span class="map__phone-sub">+7 (812) 322-34-40</span>
+              </a>
+            </div>
+            <div class="map__schedule">
+              <img src="img/clock.png" class="map__schedule-icon"></img>
+              <span>Пн-Пт 9:00 - 18:00</span>
+            </div>
+            <a href="mailto:stones@petromramor.ru" class="map__mail">stones@petromramor.ru</a>
+            <span class="map__prev-site">Переход на предыдущую версию сайта</span>
+            <a href="https://petromramor.ru" class="map__site">www.petromramor.ru</a>
+          </div>
+        </div>
+      </section>
+
+    </main>	
+
+    <!-- Окно заказа звонка -->
+    <div id="modal-call" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <button class="close-button"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
+          <form class="call-form" onsubmit="return false">
+            <div class="call-form__title">Закажите звонок</div>
+            <div class="call-form__name">
+              <label class="call-form__name-label">Ваше имя:</label>
+              <input id="call-name" type="text" class="call-form__name-input form-control"></input>
+            </div>
+            <div class="call-form__phone">
+              <label class="call-form__phone-label">E-mail:</label>
+              <input id="call-phone" type="text" class="call-form__phone-input form-control"></input>
+            </div>
+            <button class="call-form__send-button blue-button" onclick="callRequest()">Заказать звонок</button>
+            <a class="call-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <div class="call-form__firth-row">
+              <img src="img/requestTelephone.png" alt="" class="call-form__phone-icon"/>
+              <span class="call-form__whatsapp-number">+7 (999) 221-70-00</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно успешной отправки заявки -->
+    <div id="modal-thank-you" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content thank-you">
+          <img src="img/checkMark.png" alt=""/>
+          <h3>Спасибо!<br /> Ваша заявка отправлена!</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно заказа расчета стоимости -->
+    <div id="modal-calc" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered calc-modal">
+        <div class="modal-content">
+          <button class="close-button"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
+          <form class="calc-form" onsubmit="return false">
+            <div class="calc-form__question">
+              <label class="calc-form__question-label">Ваш вопрос:</label>
+              <textarea id="calc-question3" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
+            </div>
+            <div class="calc-form__second-row">
+              <div class="calc-form__phone">
+                <label class="calc-form__phone-label">E-mail:</label>
+                <input id="calc-phone3" type="text" class="calc-form__phone-input form-control"></input>
+              </div>
+              <div class="calc-form__file">
+                <label class="calc-form__file-label">Прикрепить файл:</label>
+                <input id="calc-file3" type="file" class="d-none">
+                <div class="calc-form__file-field" onclick="$('#calc-file3').click()">
+                  <img class="calc-form__file-img" src="img/fileInput.png" alt="">
+                  <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+                </div>
+              </div>
+            </div>
+            <div class="calc-form__third-row">
+              <button class="calc-form__send-button blue-button" onclick="calcRequest(3)">Отправить</button>
+            </div>
+            <div class="calc-form__forth-row">
+              <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
+              <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
+              <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+              <div class="calc-form__call">
+                <input type="text" class="calc-form__call-input form-control phone-input"/>
+                <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <div class="popup" id="popup_all">
+      <div id="myCyrillic"></div>
+    </div>
+  
+  </div>
+
+  <script type="text/javascript" src="libs/jquery/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery.mask.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery-tabs.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+  <script type="text/javascript" src="libs/wow/wow.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap/popper.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
