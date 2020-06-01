@@ -90,7 +90,7 @@ function callRequest() {
       alert(`Ошибка отправки${xhr.response}`);
     }
   };
-  xhr.send(JSON.stringify(data));  
+  xhr.send(JSON.stringify(data));
   return false;
 }
 
@@ -134,4 +134,24 @@ function calcRequest(formNumber) {
   };
   xhr.send(formData);
   return false;
+}
+
+function showCalcForm() {
+  $.fancybox.close();
+  $('#modal-calc').modal('show');
+}
+
+function loadForm(fileName) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'php/load-form.php');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = () => {
+    if (xhr.status === 200) {
+      $('#popupContent').html(xhr.responseText);
+      $(".productionGallery").slick();
+    } else {
+      alert(`Ошибка загрузки данных ${xhr.response}`);
+    }
+  };
+  xhr.send(JSON.stringify({ fileName }));
 }

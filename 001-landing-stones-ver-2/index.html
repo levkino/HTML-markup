@@ -112,7 +112,7 @@
           <div class="production__row">
             <div class="production__column production__shadow-first">
               <div class="production__back-first"></div>
-              <a class="production__item-big">
+              <a class="production__item-big" onclick="loadForm('production1.html')" data-fancybox data-src="#popup_all">
                 <img src="img/production1.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
@@ -214,7 +214,7 @@
                       Фонтаны и памятники
                     </div>
                   </a>
-                  <a class="production__item-min production__bottom" data-fancybox data-src="#popup_all" onclick="loadXMLDocBranche('http://stones.petromramor.ru/api/textload_popup.php?table=our_production_v2&id=9')">
+                  <a class="production__item-min production__bottom">
                     <img src="img/production9.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -773,7 +773,7 @@
     </div>
   
     <div class="popup" id="popup_all">
-      <div id="myCyrillic"></div>
+      <div class="popupContent" id="popupContent"></div>
     </div>
   
   </div>

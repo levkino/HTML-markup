@@ -1,0 +1,3 @@
+User-agent: *
+Host: mebellux.shop
+Sitemap: http://mebellux.shop/sitemap.xml

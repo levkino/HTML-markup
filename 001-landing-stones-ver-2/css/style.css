@@ -700,7 +700,17 @@ body {
 }
 
 .scheme { 
-  background: url(../img/schemeBackground.jpg) 50% 0 no-repeat;
+  position: relative;
+  background: url(../img/schemeBackground.jpg) 50% -150px no-repeat;
+}
+.scheme:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(0deg, transparent 0%, rgb(85, 85, 85, 0.5) 100%);
 }
 .scheme img {
   width: 800px;
@@ -1026,10 +1036,186 @@ body {
   fill: #fff;
 }
 
+.slick-arrow:focus {
+  outline: none !important;
+}
+
 input[type="text"], textarea {
   font-weight: bold !important;
 }
 input[type="text"]::placeholder, textarea::placeholder {
   color: #b0b0b0 !important;
   font-size: 0.9rem;
+}
+
+
+.popupContent {
+  background: url(../img/popup-border.png);
+  background-size: 100% 100%;
+  margin: -50px;
+  padding: 50px;
+}
+.popupWrapper h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.popupWrapper .productionGallery {
+  margin-bottom: 22px;
+  width: 810px;
+}
+.popupWrapper .productionGallery .slick-arrow {
+  background-size: 38px auto;
+  width: 38px;
+  top: 44.8%;
+  height: 38px;
+}
+.popupWrapper .productionGallery .slick-prev {
+  left: -2.5%;
+}
+.popupWrapper .productionGallery .slick-dots {
+  bottom: 8px;
+}
+
+.popupWrapper .productionGallery .slick-dots li {
+  margin: 0 6px;
+}
+.popupWrapper .productionGallery .slick-dots button {
+  width: 10px;
+  height: 10px;
+}
+.popupWrapper .productionGallery {
+  width: 720px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px 0 #3d3d3d;
+}
+.popupWrapper .productionGallery div {
+  position: relative;
+}
+.popupWrapper .productionGallery img {
+  width: 720px;
+}
+.popupWrapper .productionGallery span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 100%);
+}
+.popupWrapper .productionGallery .slick-arrow {
+  background: url(../img/stoneArrow.png) no-repeat;
+  width: 23px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-indent: -99px;
+  overflow: hidden;
+  opacity: 0.5;
+  position: absolute;
+  top: 42.9%;
+}
+.popupWrapper .productionGallery .slick-arrow:hover {
+  opacity: 1;
+}
+.popupWrapper .productionGallery .slick-prev {
+  transform: rotate(180deg);
+  left: -5%;
+}
+.popupWrapper .productionGallery .slick-next {
+  right: -5%;
+}
+.popupWrapper .productionGallery .slick-dots {
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  padding: 0;
+  list-style: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.popupWrapper .productionGallery .slick-dots li {
+  margin: 0 5px;
+  display: inline-block;
+  padding: 0;
+}
+.popupWrapper .productionGallery .slick-dots button {
+  text-indent: -99px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  background: none;
+  border-radius: 7px;
+}
+.popupWrapper .productionGallery .slick-dots .slick-active button {
+  background: white;
+}
+.popupSubtext {
+  font-size: 1rem;
+  margin: 15px 0 30px 0;
+  text-align: center;
+}
+.popupText {
+  font-weight: 500;
+  color: #414141;
+  width: 800px;
+  margin: 0 auto 27px;
+  text-align: justify;
+}
+.popupText p {
+  margin: 0 0 19px;
+  padding: 0 50px;
+  line-height: 20px;
+}
+.popupText dl+* {
+  margin-top: 25px;
+}
+.popupText dl {
+  margin: 0 auto;
+  padding: 0 50px;
+  overflow: hidden;
+  text-align: left;
+}
+.popupText dl.thickness {
+  margin-top: 17px;
+}
+.popupText dt {
+  font-weight: bold;
+  float: left;
+}
+.popupFirstDl {
+  margin-bottom: 20px !important;
+}
+.alignRight dt {
+  text-align: right;
+  width: 143px;
+}
+.popupText dd {
+  margin: 0 0 0 193px;
+}
+.popupButtonWrapper { }
+.popupCallButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 25px;
+  margin: 0 auto;
+}
+.popupCallButton img {
+  width: 30px;
+  margin-left: 20px;
 }
