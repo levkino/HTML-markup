@@ -78,7 +78,7 @@
             <div class="header__hashtag ftco-animate">#хочумебельlux</div>
             <div class="header__title ftco-animate">Мягкая мебель для дома</div>
             <div class="header__subtitle ftco-animate">Собственное производство по цене мебели из IKEA</div>
-            <a href="#" class="header__button ftco-animate">
+            <a href="#portfolio" class="header__button ftco-animate">
                 <div class="header__button-text">Портфолио</div>
                 <div class="header__button-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -105,22 +105,22 @@
             </div> -->
             <div class="info__container">
                 <div class="info__indicators">
-                    <div class="info__header ftco-animate">Наши показатели</div>
+                    <div class="info__header ftco-animate" data-animate-effect="fadeInLeft">Наши показатели</div>
                     <div class="info__items">
                         <div class="info__item ftco-animate">
-                            <span class="info__item-digit">800</span>
-                            <span class="info__item-name">Созданных проектов</span>
-                            <div class="info__item-line info__item-line_1"></div>
+                            <span class="info__item-digit ftco-animate" data-animate-effect="fadeInLeft">800</span>
+                            <span class="info__item-name ftco-animate" data-animate-effect="fadeInLeft">Созданных проектов</span>
+                            <div class="info__item-line info__item-line_1 ftco-animate" data-animate-effect="slowFastLeft"></div>
                         </div>
-                        <div class="info__item ftco-animate">
-                            <span class="info__item-digit">795</span>
-                            <span class="info__item-name">Счастливых клиентов</span>
-                            <div class="info__item-line info__item-line_2"></div>
+                        <div class="info__item">
+                            <span class="info__item-digit ftco-animate" data-animate-effect="fadeInLeft">795</span>
+                            <span class="info__item-name ftco-animate" data-animate-effect="fadeInLeft">Счастливых клиентов</span>
+                            <div class="info__item-line info__item-line_2 ftco-animate" data-animate-effect="slowFastLeft"></div>
                         </div>
-                        <div class="info__item ftco-animate">
-                            <span class="info__item-digit">4500</span>
-                            <span class="info__item-name">рабочих часов</span>
-                            <div class="info__item-line info__item-line_3"></div>
+                        <div class="info__item">
+                            <span class="info__item-digit ftco-animate" data-animate-effect="fadeInLeft">4500</span>
+                            <span class="info__item-name ftco-animate" data-animate-effect="fadeInLeft">рабочих часов</span>
+                            <div class="info__item-line info__item-line_3 ftco-animate" data-animate-effect="slowFastLeft"></div>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
             </div>
         </section>
 
-        <section class="ftco-section">
+        <section id="portfolio" class="ftco-section">
             <div class="container portfolio__wrapper">
                 <div class="portfolio__col">
                     <div class="portfolio__header">Портфолио</div>
@@ -515,7 +515,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 ftco-animate">
-                        <form class="application">
+                        <form class="application" onsubmit="return false">
                             <div class="application__header">Оставить заявку</div>
                             <div class="application__field">
                                 <input id="name-input" type="text" class="application__input" placeholder="Имя*"></input>
@@ -524,9 +524,9 @@
                                 <input id="phone-input" type="text" class="application__input" placeholder="Телефон*"></input>
                             </div>
                             <div class="application__field">
-                                <input id="email-input" type="text" class="application__input" placeholder="Email*"></input>
+                                <input id="email-input" type="text" class="application__input" placeholder="Email"></input>
                             </div>
-                            <button class="application__send">Отправить заявку</button>
+                            <button class="application__send" onclick="sendApplication()">Отправить заявку</button>
                         </form>                        
                     </div>
                 </div>
@@ -564,6 +564,16 @@
         <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
     </div>
 </div>
+
+<div id="application-thank" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content application-thank">
+        <h1>Спасибо!</h1>
+        <span>Мы свяжемся с вами в ближайшее время для уточнее деталей заказа.</span>
+        <button onclick="$('#application-thank').modal('hide')">Хорошо</button>
+      </div>
+    </div>
+  </div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>

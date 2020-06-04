@@ -9333,20 +9333,20 @@ body:after {
   width: 86px !important;
   height: 100px !important;
 }
-.colorlib-nav-toggle {
+.header .colorlib-nav-toggle {
   top: 70px;
   right: -40px;
 }
-.colorlib-nav-toggle i {
+.header .colorlib-nav-toggle i {
   margin: 10px 0;
 }
-.colorlib-nav-toggle:hover i, .colorlib-nav-toggle:hover i::before, .colorlib-nav-toggle:hover i::after {
+.header .colorlib-nav-toggle:hover i, .header .colorlib-nav-toggle:hover i::before, .header .colorlib-nav-toggle:hover i::after {
   background: #53D397;
 }
-.colorlib-nav-toggle:active i, .colorlib-nav-toggle:active i::before, .colorlib-nav-toggle:active i::after {
+.header .colorlib-nav-toggle:active i, .header .colorlib-nav-toggle:active i::before, .header .colorlib-nav-toggle:active i::after {
   background: #3B9269;
 }
-.colorlib-nav-toggle.active:hover i {
+.header .colorlib-nav-toggle.active:hover i {
   background: transparent;
 }
 
@@ -9358,7 +9358,8 @@ body:after {
 }
 .home-slider-item {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  min-height: 750px;
 }
 .home-slider-item-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/main_bg.jpg);
@@ -9374,7 +9375,6 @@ body:after {
 }
 .home-slider-item-3 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/main_bg3.jpg);
-  /* background: url(../images/main_bg3.jpg); */
   transform: matrix(-1, 0, 0, 1, 0, 0);
   background-size: cover;
   background-position: bottom right;
@@ -9433,7 +9433,7 @@ body:after {
 }
 .info__item {
   margin-bottom: 40px;
- }
+}
 .info__item-digit { 
   display: block;
   font-family: Montserrat, sans-serif;
@@ -9452,7 +9452,7 @@ body:after {
   line-height: 17px;
   text-transform: uppercase;
   color: #898787;
- }
+}
 .info__item-line { 
   margin-top: 12px;
   height: 9px;
@@ -9462,7 +9462,7 @@ body:after {
   width: 441px;
 }
 .info__item-line_2 { 
-  width: 441px;
+  width: 430px;
 }
 .info__item-line_3 { }
 .info_img img{
@@ -9664,6 +9664,74 @@ body:after {
   outline: none !important;
 }
 
+.application-thank {
+  background-color: #fff;
+  width: 800px;
+  max-width: 90vw;
+  padding: 125px 99px 0 99px;
+}
+.application-thank h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #53D397;
+  margin-bottom: 29px;
+}
+.application-thank span {
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #1C222D;
+}
+.application-thank button {
+  width: 430px;
+  height: 87px;
+  background: #53D397;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+  border: none;
+  margin: 64px auto 87px auto;
+  cursor: pointer;
+  transition: .3s;
+}
+.application-thank button:hover {
+  background: rgb(66, 180, 127);
+}
+
+.slowFastLeft {
+  -webkit-animation-name: slowFastLeft;
+  animation-name: slowFastLeft;
+  -webkit-animation-duration: 5s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes slowFastLeft {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(.5);
+    transform: translate3d(-45%, 0, 0) scaleX(.1);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -9792,7 +9860,7 @@ body:after {
     display: block;
     width: 100% !important;
   }
-  .colorlib-nav-toggle {
+  .header .colorlib-nav-toggle {
     right: 30px;
   }
   .info__container {
@@ -9862,6 +9930,22 @@ body:after {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+  }
+  .application-thank {
+    padding: 25px 20px 0 20px;
+  }
+  .application-thank h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .application-thank span {
+    font-size: 25px;
+  }
+  .application-thank button {
+    width: 100%;
+    font-size: 30px;
+    margin: 30px auto;
   }
   .ftco-section {
     padding: 2em 0;

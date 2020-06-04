@@ -142,6 +142,8 @@ $(document).ready(function($) {
 								el.addClass('fadeInLeft ftco-animated');
 							} else if ( effect === 'fadeInRight') {
 								el.addClass('fadeInRight ftco-animated');
+							} else if ( effect === 'slowFastLeft') {
+								el.addClass('slowFastLeft ftco-animated');
 							} else {
 								el.addClass('fadeInUp ftco-animated');
 							}
@@ -306,4 +308,52 @@ $('#sendBtn1').click(function() {
 
 });
 
+}
+
+function scrollToHash(selector) {
+  const top = $(selector).offset().top;
+  $('html, body').animate({ scrollTop: top }, 500);
+}
+
+$('a[href="#portfolio"]').on('click', function(e) {
+  if (this.hash.length > 3) {
+    // if (this.className.includes('menu')) {
+    //   const activeClass = 'header__menu-item-active';
+    //   $('.' + activeClass).toggleClass(activeClass);
+    //   this.classList.toggle(activeClass);
+    // }
+    scrollToHash(this.hash);
+  }
+})
+
+
+function sendApplication() { 
+	var name = $('#name-input')[0].value; 
+	if (!name) {
+    alert('Укажите имя');
+    return;
+  }
+	var phone = $('#phone-input')[0].value; 
+	if (!phone) {
+    alert('Укажите телефон');
+    return;
+  }
+	var email = $('#email-input')[0].value; 
+			
+	var emailBody ='Здраствуйте, у Вас новый заказ на сайте mebellux<br>'+'Имя: ' + name + '<br>Телефон: ' + phone + '<br>Email: ' + email; 
+	
+	Email.send({ 
+		Host : "smtp.elasticemail.com", 
+		Username : "mebellux.spb@gmail.com", 
+		Password : "b4d967a0-d00b-49ef-95eb-23eca93cae3f", 
+		To : 'mebellux.spb@gmail.com', 
+		From : "mebellux.spb@gmail.com", 
+		Subject: 'This is the subject', 
+		Body: emailBody 
+	}).then(function() { 
+		$('#name-input').val(''); 
+		$('#phone-input').val(''); 
+		$('#email-input').val(''); 
+		$('#application-thank').modal('show');
+	}); 
 }
