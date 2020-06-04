@@ -41,7 +41,7 @@ $(document).ready(function() {
   $(".production__gallery").slick({ dots: true });
 });
 
-function scrollTo(selector) {
+function scrollToHash(selector) {
   const top = $(selector).offset().top;
   $('html, body').animate({ scrollTop: top }, 500);
 }
@@ -53,7 +53,7 @@ $('a[href*="#"]').on('click', function(e) {
       $('.' + activeClass).toggleClass(activeClass);
       this.classList.toggle(activeClass);
     }
-    scrollTo(this.hash);
+    scrollToHash(this.hash);
   }
 })
 
@@ -136,9 +136,16 @@ function calcRequest(formNumber) {
   return false;
 }
 
+function showCallForm() {
+  $.fancybox.close();
+  $('#modal-call').modal('show');
+  return false;
+}
+
 function showCalcForm() {
   $.fancybox.close();
   $('#modal-calc').modal('show');
+  return false;
 }
 
 function loadForm(fileName) {
@@ -148,7 +155,28 @@ function loadForm(fileName) {
   xhr.onreadystatechange = () => {
     if (xhr.status === 200) {
       $('#popupContent').html(xhr.responseText);
-      $(".productionGallery").slick();
+      $(".productionGallery").slick({ dots: true });
+    } else {
+      alert(`Ошибка загрузки данных ${xhr.response}`);
+    }
+  };
+  xhr.send(JSON.stringify({ fileName }));
+}
+
+function loadForm2(fileName) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'php/load-form.php');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = () => {
+    if (xhr.status === 200) {
+      $('#popupContent2').html(xhr.responseText);
+      $(".catGallery").slick({ dots: true });
+      $(".catGallery2").slick({
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{ breakpoint: 651, settings: { slidesToShow: 1 }}]
+      });
     } else {
       alert(`Ошибка загрузки данных ${xhr.response}`);
     }

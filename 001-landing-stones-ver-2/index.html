@@ -279,7 +279,7 @@
           <div class="calc-form__forth-row">
             <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
             <span class="calc-form__whatsapp-number"><span class="gray">+7</span> (999) 221-70-00</span>
-            <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
             <div class="calc-form__call">
               <input type="text" class="calc-form__call-input form-control phone-input"/>
               <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
@@ -305,7 +305,7 @@
       
           <div class="tabs__content active">
             <div class="stoneBlocks">
-              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+              <div class="stoneBlock">
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа гранит</div>
@@ -377,7 +377,7 @@
                   <div>Ладожское гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog1.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone5.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский граносиенит</div>
@@ -644,7 +644,7 @@
           <div class="calc-form__forth-row">
             <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
             <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
-            <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
             <div class="calc-form__call">
               <input type="text" class="calc-form__call-input form-control phone-input"/>
               <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
@@ -670,7 +670,7 @@
                 <img src="img/phoneWhite.png" alt="" class="map__phone-icon">
                 <span class="map__phone-title">+7 (999) 221-70-00</span>
               </a>
-              <a href="whatsapp://send?phone=79992217000">
+              <a href="https://wa.me/79992217000">
                 <img src="img/whatsapp.png" alt="" class="map__phone-whatsapp">
               </a>
             </div>
@@ -711,7 +711,7 @@
               <input id="call-phone" type="text" class="call-form__phone-input form-control"></input>
             </div>
             <button class="call-form__send-button blue-button" onclick="callRequest()">Заказать звонок</button>
-            <a class="call-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+            <a class="call-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
             <div class="call-form__firth-row">
               <img src="img/requestTelephone.png" alt="" class="call-form__phone-icon"/>
               <span class="call-form__whatsapp-number">+7 (999) 221-70-00</span>
@@ -761,7 +761,7 @@
             <div class="calc-form__forth-row">
               <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
               <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
-              <a class="calc-form__whatsapp-button blue-button" href="whatsapp://send?phone=79992217000">Написать в Whatsapp</a>
+              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
               <div class="calc-form__call">
                 <input type="text" class="calc-form__call-input form-control phone-input"/>
                 <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
@@ -774,6 +774,10 @@
   
     <div class="popup" id="popup_all">
       <div class="popupContent" id="popupContent"></div>
+    </div>
+
+    <div class="popup popup2" id="popup_all2">
+      <div class="popupContent2" id="popupContent2"></div>
     </div>
   
   </div>
