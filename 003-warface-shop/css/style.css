@@ -30,7 +30,12 @@ a:hover {
 }
 
 .wrapper { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 .header-mobile {
@@ -41,7 +46,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  margin: 40px auto;
+  margin: 40px 0;
 }
 .header__logo { 
   display: flex;
@@ -137,7 +142,7 @@ a:hover {
   font-family: Proxima Nova;
   font-weight: bold;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -460,7 +465,7 @@ a:hover {
 /* burger end */
 
 
-/* При ширине экрана в 767 и менее - будет выполнен медиа запрос */
+/* Малые экраны */
 @media (max-width: 767px) {
   .header-mobile {
     position: relative;
@@ -556,7 +561,7 @@ a:hover {
   }
   .random-accounts__item {
     width: 100%;
-    margin: 10px 30px;
+    margin: 10px 30px 20px 30px;
   }
   .random-accounts__item:nth-child(n+4) {
     display: none;
@@ -570,7 +575,7 @@ a:hover {
   .personal-accounts__item {
     justify-content: center;
     width: 100%;
-    margin: 10px 30px;
+    margin: 10px 30px 20px 30px;
     height: auto;
     padding: 30px 0 20px 0;
   }
