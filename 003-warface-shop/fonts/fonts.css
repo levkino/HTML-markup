@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Proxima Nova; /* Имя шрифта */
+  src: url(./proxima-nova-regular.woff); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Proxima Nova; /* Имя шрифта */
+  src: url(./proxima-nova-bold.woff); /* Путь к файлу со шрифтом */
+  font-weight: 800;
+}
