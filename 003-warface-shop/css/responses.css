@@ -1,0 +1,124 @@
+.responses {
+  flex: 1 0 auto;
+  margin: 50px 0;
+}
+.responses__content { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.responses__item { 
+  max-width: 380px;
+  min-height: 137.5px;
+  background: #212648;
+  box-shadow: 0px 0px 25px rgba(20, 25, 54, 0.18);
+  border-radius: 14px;
+  padding: 30px 30px 20px 30px;
+  margin: 0 10px 30px 10px;
+}
+.responses__item-icon {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border: 1px solid #50ABFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0px 4px 45px rgba(80, 171, 255, 0.5);
+}
+.responses__item-title { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #50ABFF;
+}
+.responses__item-subtitle { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #929AB5;
+  margin-top: 10px;
+  min-width: 320px;
+}
+.responses__load-more {
+  width: 280px;
+  margin: 40px auto 40px auto;
+}
+.responses__feedback { 
+  position: relative;
+  width: 400px;
+  margin: 0 auto 10px auto;
+}
+.responses__feedback-text { 
+  width: 100%;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #777AA4;
+  width: 400px;
+  height: 60px;
+  background: #181A31;
+  box-shadow: 0px 4px 46px rgba(162, 108, 255, 0.15);
+  border-radius: 250px;
+  padding: 0 25px;
+}
+.responses__feedback-text::placeholder { 
+  color: #777AA4;
+}
+.responses__feedback-send { 
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  background: #A26CFF;
+  border-radius: 50%;
+  transition: .3s;
+}
+.responses__feedback-send:hover { 
+  background: rgb(181, 138, 255);
+}
+
+
+/* Малые экраны */
+@media (max-width: 767px) {
+  .responses {
+    flex: 1 0 auto;
+    margin: 50px 0 20px 0;
+  }
+  .responses__item { 
+    width: 280px;
+    margin: 0 30px 20px 30px;
+  }
+  .responses__item:nth-child(n+4) { 
+    display: none;
+  }
+  .responses__item-title { 
+    margin-top: 15px;
+  }
+  .responses__item-subtitle {
+    display: block;
+    margin-top: 35px;
+    min-width: 100%;
+  }
+  .responses__load-more {
+    width: 280px;
+    margin: 40px auto 20px auto;
+  }
+  .responses__feedback { 
+    position: relative;
+    width: 280px;
+    margin: 0 auto 10px auto;
+  }
+  .responses__feedback-text { 
+    width: 280px;
+  }
+}
