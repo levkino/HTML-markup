@@ -1,0 +1,212 @@
+.buy {
+  flex: 1 0 auto;
+  margin: 50px 0;
+}
+.buy__content { 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.slider__wrapper { 
+  width: 575px;
+}
+.slider { }
+.slider__img { }
+.slider .owl-nav button {
+  display: none;
+}
+.slider-thumb { }
+.slider__img-thumb { 
+  width: 178px !important;
+}
+.slider-thumb .owl-nav button {
+  position: absolute;
+  top: 15%;
+  width: 90px;
+  height: 90px;
+  transition: transform .3s ease;
+}
+.slider-thumb .owl-prev {
+  left: 0;
+  background: url(../img/icons/slider-prev.png) 0 0 no-repeat !important;
+}
+.slider-thumb .owl-next {
+  right: 0;
+  background: url(../img/icons/slider-next.png) 0 0 no-repeat !important;
+}
+.slider-thumb .owl-nav span {
+  display: none;
+}
+.slider-thumb .owl-next:hover {
+  transform: scale(1.2);
+}
+.slider__after {
+  margin-top: 20px;
+}
+.buy__desc { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 100%;
+}
+.buy__first-row { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 56px;
+  width: 100%;
+}
+.buy__sum { 
+  flex: 0 0 auto;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 20px rgba(80, 171, 255, 0.5);
+}
+.buy__button { 
+  margin-left: 160px;
+}
+.buy__second-row { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.buy__advantage { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  width: 250px;
+}
+.buy__advantage-icon { }
+.buy__advantage-text { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #929AB5;
+  margin-left: 14px;
+}
+
+.buy__third-row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+.buy__weapon { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 181px;
+  height: 117px;
+  background: #212648;
+  box-shadow: 0px 0px 25px rgba(20, 25, 54, 0.18);
+  border-radius: 14px;
+  margin: 6px;
+}
+.buy__weapon-img { 
+  width: 110px;
+  height: 46px;
+}
+.buy__weapon-title { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 11px;
+}
+
+
+/* Малые экраны */
+@media (max-width: 767px) {
+  .buy {
+    flex: 1 0 auto;
+    margin: 50px 0 20px 0;
+  }
+  .buy__content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slider__wrapper { 
+    width: 280px;
+    margin: 0 auto;
+  }
+  .slider-thumb { 
+    display: none !important;
+  }
+  .slider__img-thumb { 
+    display: none;
+  }
+  .slider .owl-nav button {
+    display: block;
+    position: absolute;
+    top: 30%;
+    width: 90px;
+    height: 90px;
+    transition: transform .3s ease;
+  }
+  .slider .owl-prev {
+    left: -15px;
+    background: url(../img/icons/slider-prev.png) 0 0 no-repeat !important;
+  }
+  .slider .owl-next {
+    right: -15px;
+    background: url(../img/icons/slider-next.png) 0 0 no-repeat !important;
+  }
+  .slider .owl-nav span {
+    display: none;
+  }
+  .slider .owl-next:hover {
+    transform: scale(1.2);
+  }
+  .slider__after {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .buy__desc {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .buy__first-row {
+    flex-direction: column;
+  }
+  .buy__button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .buy__third-row { 
+    justify-content: center;
+  }
+  .buy__weapon { 
+    width: 134px;
+  }
+  .buy__weapon:nth-child(n+5) { 
+    display: none;
+  }
+  .buy__weapon-img { 
+    width: 80px;
+    height: 34px;
+  }
+  .buy__weapon-title { 
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 11px;
+  }
+}

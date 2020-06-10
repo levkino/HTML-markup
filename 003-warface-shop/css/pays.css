@@ -1,0 +1,219 @@
+.pays {
+  flex: 1 0 auto;
+  margin: 50px 0;
+}
+.pays__content { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.profile__ava { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__icon { 
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.profile__header { 
+  margin-left: 20px;
+}
+.profile__name { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.profile__pay { 
+  display: block;
+  margin-top: 14px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.profile__pay:after { 
+  display: block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  margin-top: 2px;
+  background-color: #495289;
+}
+.profile__pay:hover:after { 
+  opacity: .8;
+  background-color: #fff;
+}
+.profile__deposit { 
+  display: flex;
+  align-items: center;
+}
+.profile__deposit-icon { }
+.profile__deposit-text { 
+  margin-left: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #929AB5;
+}
+.profile__deposit-value { 
+  margin-left: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #A26CFF;
+}
+.profile__accounts-pay { 
+  display: flex;
+  align-items: center;
+}
+.profile__accounts-pay-text { 
+  margin-left: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #929AB5;
+}
+.profile__accounts-pay-value { 
+  margin-left: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #A26CFF;
+}
+
+.history { 
+  margin-bottom: 100px;
+}
+.history__content { 
+  background: #212648;
+  box-shadow: 0px 0px 25px rgba(20, 25, 54, 0.18);
+  border-radius: 14px;
+}
+.history__table { 
+  width: 100%;
+}
+.history__table th { 
+  height: 50px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #929AB5;
+}
+.history__table tr { 
+  height: 50px;
+}
+.history__table td { 
+  margin: 0 auto;
+  text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.pay-modal {
+  display: none;
+  background: #212648 !important;
+  box-shadow: 0px 0px 25px rgba(20, 25, 54, 0.18);
+  border-radius: 14px;
+  padding: 30px !important;
+}
+.pay-modal .fancybox-content {
+  background: #212648 !important;
+}
+.pay-modal__title { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #929AB5;
+}
+.pay-modal__icons { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.pay-modal__icon { 
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.pay-modal__sum { 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 60px;
+  background: #181A31;
+  box-shadow: 0px 4px 46px rgba(162, 108, 255, 0.15);
+  border-radius: 14px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #777AA4;
+  padding: 0 20px;
+}
+.pay-modal__sum::placeholder { 
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #777AA4;
+}
+.pay-modal__button {
+  box-shadow: 0px 0px 30px rgba(80, 171, 255, 0.28);
+}
+
+
+/* Малые экраны */
+@media (max-width: 767px) {
+  .pays {
+    flex: 1 0 auto;
+    margin: 50px 0 20px 0;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile__deposit {
+    margin: 10px;
+  }
+  .profile__accounts-pay {
+    margin: 10px;
+  }
+}
