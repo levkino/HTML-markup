@@ -22,7 +22,7 @@
               <img src="img/logo-mini.png" alt="">
             </a>
             <div class="header__address contact-card">
-              <img src="img/geo.png" alt="" class="contact-card__img">
+              <img src="img/geo.png" alt="" class="contact-card__img header__address-img">
               <div class="contact-card__text">
                 г. Санкт-Петербург,<br/>
                 Большой просп. В.О., 80,<br/>
@@ -30,9 +30,9 @@
               </div>
             </div>
             <div class="header__schedule contact-card">
-              <img src="img/clock.png" alt="" class="contact-card__img">
+              <img src="img/clock.png" alt="" class="contact-card__img header__schedule-img">
               <div class="header__schedule-text contact-card__text">
-                <span>Пн-Пт 9:00 - 18:00</span>
+                <span>Пн-Пт 9:00  -  18:00</span>
                 <a class="white-link d-inline-block mt-1" href="tel:78123220940">+7 (812) 322-09-40</a><br/>
                 <a class="white-link" href="tel:78123223440">+7 (812) 322-34-40</a>
               </div>
@@ -41,7 +41,7 @@
               <img src="img/phoneWhite.png" alt="" class="contact-card__img">
               <div class="contact-card__text">
                 <a class="white-link contact-card__main-phone" href="tel:79992217000">+7 (999) 221-70-00</a><br/>
-                <a class="white-link d-inline-block mt-2 ml-5" href="mailto:stones@petromramor.ru">stones@petromramor.ru</a>
+                <a class="white-link contact-card__email d-inline-block" href="mailto:stones@petromramor.ru">stones@petromramor.ru</a>
               </div>
             </div>
             <div class="header__call blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</div>
@@ -57,7 +57,7 @@
         <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ ДЛЯ СТРОИТЕЛЬСТВА И ОТДЕЛКИ</h1>
         <div class="header__line animate__animated animate__fadeInUp"></div>
         <div class="header__subtitle animate__animated animate__fadeInUp">с 2002 года</div>
-        <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Расчитать стоимость</div>
+        <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Рассчитать стоимость</div>
         <a class="header__arrow animate__animated animate__fadeInUp" href="#advantages"></a>
       </div>
     </header>
@@ -101,7 +101,7 @@
             <div class="advantage-item__icon-wrapper">
               <img class="advantage-item__icon advantage-item__icon_car" src="img/truck.png" alt="">
             </div>
-            <div class="advantage-item__text">Доставка по всей России</div>
+            <div class="advantage-item__text">Доставка<br/>по всей России</div>
           </div>
         <div/>
       </section>
@@ -260,10 +260,6 @@
             <textarea id="calc-question1" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
           </div>
           <div class="calc-form__second-row">
-            <div class="calc-form__phone">
-              <label class="calc-form__phone-label">E-mail:</label>
-              <input id="calc-phone1" type="text" class="calc-form__phone-input form-control"></input>
-            </div>
             <div class="calc-form__file">
               <label class="calc-form__file-label">Прикрепить файл:</label>
               <input id="calc-file1" type="file" class="d-none">
@@ -272,17 +268,32 @@
                 <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
               </div>
             </div>
+            <div class="calc-form__email">
+              <label class="calc-form__email-label">Ваш e-mail:</label>
+              <input id="calc-email1" type="text" class="calc-form__email-input form-control" placeholder=" ___@____"></input>
+            </div>
+            <div class="calc-form__phone">
+              <label class="calc-form__phone-label">Ваш телефон:</label>
+              <input id="calc-phone1" type="text" class="calc-form__phone-input phone-input form-control"></input>
+            </div>
+          </div>
+          <div class="calc-form__agree-row">
+            <input id="agree1" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+            <label class="calc-form__agree-text" for="agree1">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
           </div>
           <div class="calc-form__third-row">
             <button class="calc-form__send-button blue-button" onclick="calcRequest(1)">Отправить</button>
           </div>
           <div class="calc-form__forth-row">
-            <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
-            <span class="calc-form__whatsapp-number"><span class="gray">+7</span> (999) 221-70-00</span>
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+              <img src="img/whatsapp.png" alt="">
+              <span>Написать в WhatsApp</span>
+            </a>
             <div class="calc-form__call">
-              <input type="text" class="calc-form__call-input form-control phone-input"/>
-              <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+              <button class="calc-form__call-button blue-button">
+                <img src="img/requestTelephoneOutlineLight.png" alt="">
+                <span>Заказать звонок</span>
+              </button>
             </div>
           </div>
         </form>
@@ -300,7 +311,7 @@
           <ul class="stoneType tabs__caption wow animate__animated animate__fadeInUp">
             <li class="active">ГРАНИТ</li>
             <li>ИЗВЕСТНЯК</li>
-            <li>МРАМОР</li>
+            <li>ИМПОРТ</li>
           </ul>
       
           <div class="tabs__content active">
@@ -424,7 +435,7 @@
                   <div>Возрождение гранит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <!-- <div class="stoneBlock">
                 <img src="img/stone4.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ладожское гранит2</div>
@@ -465,7 +476,7 @@
                 <div class="stoneText">
                   <div>2Каменногорское гранит</div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
       
@@ -580,6 +591,12 @@
 
         <div class="certificates__items mt-3 mb-5 wow animate__animated animate__fadeInUp">
           <div>
+            <a class="fancybox-button" href="img/certificate4.jpg">
+              <img src="img/certificate4.jpg" alt="" class="certificates__item"/>
+            </a>
+            <span class="certificates__text">Компания "ПетроМрамор" в Торгово-Промышленной палате Санкт-Петербурга</span>
+          </div>
+          <div>
             <a class="fancybox-button" href="img/certificate1.jpg">
               <img src="img/certificate.jpg" alt="" class="certificates__item"/>
             </a>
@@ -597,12 +614,6 @@
             </a>
             <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
           </div>
-          <div>
-            <a class="fancybox-button" href="img/certificate4.jpg">
-              <img src="img/certificate4.jpg" alt="" class="certificates__item"/>
-            </a>
-            <span class="certificates__text">Компания "ПетроМрамор" в Торгово-Промышленной палате Санкт-Петербурга</span>
-          </div>
         </div>
       </section>
 
@@ -610,11 +621,19 @@
         <h1 class="section__header clients__header wow animate__animated animate__fadeInUp">Нас выбирают</h1>
 
         <div class="clients_images wow animate__animated animate__fadeInUp">
-          <img class="clients_image" src="img/client1.jpg" alt="">
-          <img class="clients_image" src="img/client2.jpg" alt="">
-          <img class="clients_image" src="img/client3.jpg" alt="">
-          <img class="clients_image" src="img/client4.jpg" alt="">
-          <img class="clients_image" src="img/client5.jpg" alt="">
+          <div>
+            <img class="clients_image" src="img/logo-lukoil.png" width="96" alt="">
+            <img class="clients_image" src="img/logo-lahta.png" width="217" alt="">
+            <img class="clients_image" src="img/logo-mosmetrostroy.png" width="206" alt="">
+            <img class="clients_image" src="img/logo-lenmetro.png" width="126" alt="">
+            <img class="clients_image" src="img/logo-valaam.png" width="95" alt="">
+            <img class="clients_image" src="img/logo-mosmetro.png" width="133" alt="">
+          </div>
+          <div>
+            <img class="clients_image_row2" src="img/logo-gasprom.png" width="211" alt="">
+            <img class="clients_image_row2" src="img/logo-gallery.png" width="241" alt="">
+            <img class="clients_image_row2" src="img/logo-lenspecstroy.png" width="312" alt="">
+          </div>
         </div>
     
         <div class="clients_request">Отправьте заявку на расчет<br/>стоимости вашего проекта</div>
@@ -625,10 +644,6 @@
             <textarea id="calc-question2" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
           </div>
           <div class="calc-form__second-row">
-            <div class="calc-form__phone">
-              <label class="calc-form__phone-label">E-mail:</label>
-              <input id="calc-phone2" type="text" class="calc-form__phone-input form-control"></input>
-            </div>
             <div class="calc-form__file">
               <label class="calc-form__file-label">Прикрепить файл:</label>
               <input id="calc-file2" type="file" class="d-none">
@@ -637,17 +652,32 @@
                 <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
               </div>
             </div>
+            <div class="calc-form__email">
+              <label class="calc-form__email-label">Ваш e-mail:</label>
+              <input id="calc-email2" type="text" class="calc-form__email-input form-control" placeholder=" ___@____"></input>
+            </div>
+            <div class="calc-form__phone">
+              <label class="calc-form__phone-label">Ваш телефон:</label>
+              <input id="calc-phone2" type="text" class="calc-form__phone-input phone-input form-control"></input>
+            </div>
+          </div>
+          <div class="calc-form__agree-row">
+            <input id="agree2" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+            <label class="calc-form__agree-text" for="agree1">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
           </div>
           <div class="calc-form__third-row">
             <button class="calc-form__send-button blue-button" onclick="calcRequest(2)">Отправить</button>
           </div>
           <div class="calc-form__forth-row">
-            <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
-            <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+              <img src="img/whatsapp.png" alt="">
+              <span>Написать в WhatsApp</span>
+            </a>
             <div class="calc-form__call">
-              <input type="text" class="calc-form__call-input form-control phone-input"/>
-              <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+              <button class="calc-form__call-button blue-button">
+                <img src="img/requestTelephoneOutlineLight.png" alt="">
+                <span>Заказать звонок</span>
+              </button>
             </div>
           </div>
         </form>
@@ -704,29 +734,25 @@
             <div class="call-form__title">Закажите звонок</div>
             <div class="call-form__name">
               <label class="call-form__name-label">Ваше имя:</label>
-              <input id="call-name" type="text" class="call-form__name-input form-control"></input>
+              <input id="call-name" type="text" class="call-form__name-input form-control" placeholder="Ваше имя..."></input>
             </div>
             <div class="call-form__phone">
-              <label class="call-form__phone-label">E-mail:</label>
-              <input id="call-phone" type="text" class="call-form__phone-input form-control"></input>
+              <label class="call-form__phone-label">Ваш номер:</label>
+              <input id="call-phone" type="text" class="call-form__phone-input phone-input form-control"></input>
             </div>
-            <button class="call-form__send-button blue-button" onclick="callRequest()">Заказать звонок</button>
-            <a class="call-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
-            <div class="call-form__firth-row">
-              <img src="img/requestTelephone.png" alt="" class="call-form__phone-icon"/>
-              <span class="call-form__whatsapp-number">+7 (999) 221-70-00</span>
+            <div class="call-form__agree-row calc-form__agree-row">
+              <input id="agree1" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+              <label class="calc-form__agree-text" for="agree1">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
             </div>
+            <button class="call-form__send-button calc-form__call-button blue-button" onclick="callRequest()">
+              <img src="img/requestTelephoneOutlineLight.png" alt="">
+              <span>Заказать звонок</span>
+            </button>
+            <a class="call-form__whatsapp-button calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+              <img src="img/whatsapp.png" alt="">
+              <span>Написать в WhatsApp</span>
+            </a>
           </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- Окно успешной отправки заявки -->
-    <div id="modal-thank-you" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content thank-you">
-          <img src="img/checkMark.png" alt=""/>
-          <h3>Спасибо!<br /> Ваша заявка отправлена!</h3>
         </div>
       </div>
     </div>
@@ -742,10 +768,6 @@
               <textarea id="calc-question3" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
             </div>
             <div class="calc-form__second-row">
-              <div class="calc-form__phone">
-                <label class="calc-form__phone-label">E-mail:</label>
-                <input id="calc-phone3" type="text" class="calc-form__phone-input form-control"></input>
-              </div>
               <div class="calc-form__file">
                 <label class="calc-form__file-label">Прикрепить файл:</label>
                 <input id="calc-file3" type="file" class="d-none">
@@ -754,17 +776,32 @@
                   <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
                 </div>
               </div>
+              <div class="calc-form__email">
+                <label class="calc-form__email-label">Ваш e-mail:</label>
+                <input id="calc-email3" type="text" class="calc-form__email-input form-control" placeholder=" ___@____"></input>
+              </div>
+              <div class="calc-form__phone">
+                <label class="calc-form__phone-label">Ваш телефон:</label>
+                <input id="calc-phone3" type="text" class="calc-form__phone-input phone-input form-control"></input>
+              </div>
+            </div>
+            <div class="calc-form__agree-row">
+              <input id="agree3" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+              <label class="calc-form__agree-text" for="agree3">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
             </div>
             <div class="calc-form__third-row">
               <button class="calc-form__send-button blue-button" onclick="calcRequest(3)">Отправить</button>
             </div>
             <div class="calc-form__forth-row">
-              <img src="img/requestTelephone.png" alt="" class="calc-form__phone-icon"/>
-              <span class="calc-form__whatsapp-number">+7 (999) 221-70-00</span>
-              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">Написать в Whatsapp</a>
+              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+                <img src="img/whatsapp.png" alt="">
+                <span>Написать в WhatsApp</span>
+              </a>
               <div class="calc-form__call">
-                <input type="text" class="calc-form__call-input form-control phone-input"/>
-                <button class="calc-form__call-button blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+                <button class="calc-form__call-button blue-button">
+                  <img src="img/requestTelephoneOutlineLight.png" alt="">
+                  <span>Заказать звонок</span>
+                </button>
               </div>
             </div>
           </form>
@@ -778,6 +815,16 @@
 
     <div class="popup popup2" id="popup_all2">
       <div class="popupContent2" id="popupContent2"></div>
+    </div>
+    
+    <!-- Окно успешной отправки заявки -->
+    <div id="modal-thank-you" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content thank-you">
+          <img src="img/checkMark.png" alt=""/>
+          <h3>Спасибо!<br /> Ваша заявка отправлена!</h3>
+        </div>
+      </div>
     </div>
   
   </div>

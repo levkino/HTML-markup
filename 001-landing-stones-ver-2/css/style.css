@@ -41,53 +41,81 @@ body {
 .header__contacts {
   display: flex;
   justify-items: space-between;
-  align-items: center;
-  width: 1040px;
+  align-items: flex-start;
+  width: 1128px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding-top: 26px;
+  padding-bottom: 24px;
  }
 .header__logo {
    flex-grow: 1;
    text-align: left;
    margin-right: 5px;
- }
-.header__address { }
-.header__schedule { }
+}
+.header__logo img {
+  width: 213px;
+}
+.header__address { 
+  flex: 0 0 auto;
+  width: 190px;
+}
+.header__address-img {
+  margin-top: 7px;
+}
+.header__schedule { 
+  flex: 0 0 auto;
+  width: 155px;
+  margin-left: 26px !important;
+  margin-right: 29px !important;
+}
+.header__schedule-img {
+  margin: -6px 4px 0 0 !important;
+}
 .header__schedule-text {
-  margin-top: 10px;
+  margin-top: -4px;
 }
 .header__schedule-text span {
   display: block;
   margin-left: 4px;
 }
-.header__phone { }
+.header__phone { 
+  flex: 0 0 auto;
+  width: 255px;
+  margin-top: 7px !important;
+  margin-right: 28px !important;
+}
 .header__phone img {
   margin-right: 3px;
+  margin-top: 3px;
 }
 .header__call {
-  margin-left: 4px;
-  flex-grow: 1;
+  flex: 0 0 auto;
+  margin: 7px 3px 0 0;
+  width: 195px;
 }
 .contact-card { 
   display: flex;
-  justify-items: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin: 0 10px;
+  justify-items: flex-end;
+  align-items: flex-start;
+  margin: 5px 0 0 0px;
 }
 .contact-card__img { 
   width: 30px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .contact-card__text { 
   text-align: left;
   line-height: 16px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .contact-card__main-phone {
-  font-size: 1.6rem;
+  font-size: 25px;
   font-weight: bold;
+  white-space: nowrap;
+}
+.contact-card__email {
+  margin: 8px 0 0 38px;
+  font-size: 13px;
 }
   
 .header__menu {
@@ -99,9 +127,9 @@ body {
  }
 .header__menu-item {
   font-weight: 500;
-  font-size: 1.2rem;
-  padding: 10px;
-  width: 200px;
+  font-size: 15.8px;
+  padding: 13px 0 10px 0;
+  width: 193px;
   color: #fff;
   border-bottom: 3px solid transparent;
   transition: all .2s ease;
@@ -118,17 +146,17 @@ body {
  }
 
 .header__title {
-  max-width: 800px;
-  margin: 20px auto 10px auto;
-  line-height: 50px;
-  font-size: 35px;
+  max-width: 900px;
+  margin: 21px auto 3px auto;
+  line-height: 41px;
+  font-size: 33px;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
 .header__subtitle {
-  font-size: 37px;
+  font-size: 36.8px;
   color: white;
   font-weight: bold;
 }
@@ -136,14 +164,16 @@ body {
 .header__line {
   height: 3px;
   background-color: #4f6d9f;
-  width: 275px;
+  width: 228px;
   margin: 0 auto 10px auto;
 }
 
 .header__calculate {
-  font-size: 22px !important;
-  margin: 30px auto 100px auto;
-  padding: 15px 25px !important;
+  font-size: 22.6px !important;
+  letter-spacing: 0.1px;
+  margin: 41px auto 103px auto;
+  width: 312px;
+  height: 45px;
   box-shadow: 3px 5px 5px 0px #314c7a;
 }
 
@@ -154,7 +184,7 @@ body {
 .header__arrow {
   position: absolute;
   left: calc(50% - 37px);
-  bottom: -30px;
+  bottom: -39px;
   background: url(../img/arrowDown.png);
   width: 74px;
   height: 74px;
@@ -191,13 +221,15 @@ body {
  }
 .section__header {
   font-weight: bold;
-  font-size: 39px;
+  font-size: 40.25px;
   color: #414141;
   text-align: center;
   margin: 30px 0 30px 0;
 }
 
-.advantages { 
+.advantages .section__header { 
+  margin-top: 51px !important;
+  margin-bottom: 23px !important;
 }
 .advantage-items__line {
   position: absolute;
@@ -238,13 +270,13 @@ body {
   margin: 12px 0 0 10px;
 }
 .advantage-item__text {
-  margin: 25px 10px 0 10px;
-  width: 110px;
+  margin: 30px 0 -11px 0;
+  width: 132px;
   color: #414141;
   text-align: center;
-  font-size: 15px;
+  font-size: 14.9px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .productions {
@@ -253,7 +285,7 @@ body {
 }
 
 .productions {
-  padding-top: 90px;
+  padding-top: 69px;
 }
 .productions__items { }
 .production__row {
@@ -401,42 +433,34 @@ body {
   padding: 15px 20px 10px 20px;
   border-radius: 5px;
   box-shadow: 0 0 8px 3px #adadad;
-  width: 613px;
+  width: 610px;
 }
 .calc-form__title { 
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 7px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: -1px;
 }
 .calc-form__question { }
 .calc-form__question-label { 
-  font-size: 1rem;
+  font-size: 14.2px;
   font-weight: bold;
 }
-.calc-form__question-textarea { }
+.calc-form__question-textarea { 
+  height: 53px !important;
+}
 .calc-form__second-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
- }
-.calc-form__phone { 
-  flex: 1 0 auto;
+  margin-top: 10px;
 }
-.calc-form__phone-label { 
-  font-size: 1rem;
-  font-weight: bold;
-}
-.calc-form__phone-input { }
 .calc-form__file {
-  flex: 1 0 auto;
-  margin-left: 20px;
+  flex: 1 1 auto;
 }
 .calc-form__file-label { 
-  font-size: 1rem;
+  font-size: 14.2px;
   font-weight: bold;
 }
 .calc-form__file-field {
@@ -449,23 +473,75 @@ body {
   width: 25px;
 }
 .calc-form__file-input { 
-  padding-left: 35px;
+  font-size: 17px;
+  padding-left: 40px !important;
+  padding-top: 0 !important;
   cursor: pointer;
+  width: 179px;
+  height: 33px;
 }
+.calc-form__file-input::placeholder { 
+  font-size: 17px;
+}
+.calc-form__email { 
+  flex: 1 1 auto;
+  margin-left: 15px;
+}
+.calc-form__email-label { 
+  font-size: 14.2px;
+  font-weight: bold;
+}
+.calc-form__email-input { 
+  font-size: 17px;
+  width: 180px;
+  padding-top: 0 !important;
+  height: 33px;
+}
+.calc-form__email-input::placeholder { 
+  font-size: 16px !important;
+}
+.calc-form__phone { 
+  flex: 1 1 auto;
+  margin-left: 16px;
+}
+.calc-form__phone-label { 
+  font-size: 14.2px;
+  font-weight: bold;
+}
+.calc-form__phone-input { 
+  font-size: 17px;
+  padding-left: 6px !important;
+  padding-top: 1px !important;
+  height: 33px;
+}
+.calc-form__phone-input::placeholder { 
+  font-size: 15px !important;
+}
+.calc-form__agree-row { 
+  margin-top: 16px;
+  text-align: center;
+}
+.calc-form__agree-text { 
+  font-size: 12.76px;
+}
+.calc-form__agree-link { }
+.calc-form__agree-check { }
 .calc-form__third-row { 
-  margin-top: 20px;
+  margin-top: 2px;
   text-align: center;
 }
 .calc-form__send-button { 
-  font-weight: normal;
-  width: 299px;
-  margin-left: 3px;
+  font-size: 17px;
+  width: 270px;
+  height: 33px;
+  padding-top: 8px;
 }
 .calc-form__forth-row { 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 .calc-form__phone-icon {
   flex: 0 0 auto;
@@ -481,19 +557,25 @@ body {
 }
 .calc-form__whatsapp-button { 
   flex: 0 0 auto;
-  font-size: 0.9rem;
+  font-size: 14.36px;
   margin: 0;
   text-align: center;
   background-color: #00b058;
-  width: 152px;
-  height: 33.5px;
+  width: 269px;
+  height: 33px;
   line-height: 16px;
-  padding-left: 0;
+  padding-left: 4px;
   padding-right: 0;
+  padding-top: 9px;
 }
 .calc-form__whatsapp-button:hover { 
   color: #fff;
   background-color: #008844;
+}
+.calc-form__whatsapp-button img {
+  margin: -4px 2px 0 -6px;
+  width: 25px;
+  height: 24px;
 }
 .calc-form__call {
   display: flex;
@@ -506,14 +588,19 @@ body {
  }
 .calc-form__call-button {
   flex: 0 0 auto;
-  font-size: 0.9rem;
+  font-size: 15.17px;
   margin-left: 10px;
-  width: 128px;
-  height: 33.5px;
+  width: 269px;
+  height: 33px;
   line-height: 16px;
   padding-left: 0;
   padding-right: 0;
  }
+ .calc-form__call-button img {
+  margin: -9px 1px 0 4px;
+  width: 36px;
+  height: 30px;
+}
 /* Форма запроса цены - конец */
 
 
@@ -531,33 +618,55 @@ body {
   flex: 1 0 auto;
   margin-top: 10px;
 }
+.call-form__phone-input, .call-form__name-input {
+  font-size: 17px;
+  padding-left: 8px !important;
+  padding-top: 0px !important;
+  height: 33px;
+}
+.call-form__phone-input::placeholder, .call-form__name-input::placeholder {
+  font-size: 17px !important;
+}
 .call-form__phone-label, .call-form__name-label { 
   font-size: 1.2rem;
   font-weight: bold;
 }
+.calc-form__agree-row .calc-form__agree-text {
+  padding-top: 0px !important;
+  margin-top: -3px;
+  line-height: 17px;
+  text-align: right;
+  margin-right: 7px;
+}
+.call-form__agree-row label {
+  background-position-y: 6px !important;
+  height: 23px !important;
+}
+.call-form__agree-row label::after {
+  top: 7px !important;
+}
 .call-form__send-button { 
-  font-weight: normal;
   width: 100%;
   margin: 20px auto;
+  margin-top: 13px;
+  height: 38px;
+  padding-top: 11px !important;
+  padding-right: 10px;
 }
-.call-form__phone-icon {
-  flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
- }
-.call-form__whatsapp-number { 
-  flex: 0 0 auto;
-  font-size: 1.4rem;
+.call-form__send-button span { 
+  font-size: 18px;
 }
 .call-form__whatsapp-button { 
   flex: 0 0 auto;
   width: 100%;
-  text-align: center;
-  background-color: #00b058;
+  height: 38px;
+  padding-top: 11px !important;
+  margin-bottom: 20px;
+  padding-left: 1px;
 }
-.call-form__whatsapp-button:hover { 
-  color: #fff;
-  background-color: #008844;
+.call-form__whatsapp-button span { 
+  font-size: 18px;
+  margin-left: 2px;
 }
 .call-form__firth-row {
   margin: 20px auto;
@@ -655,6 +764,10 @@ body {
 
 .stoneText span {
   white-space: nowrap;
+}
+
+.tabs .slick-track {
+  margin-left: 0;
 }
 
 .tabs .slick-slide>div {
@@ -864,26 +977,64 @@ body {
 }
 
 .clients {
-  background: white url(../img/ourClientsBackground.jpg) 50% 250px no-repeat;
+  background: white url(../img/ourClientsBackground.jpg) 50% 350px no-repeat;
 }
 .clients__header { 
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
-.clients_images {
+.clients_images div {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 900px;
- }
-.clients_image { 
-  width: 165px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 45px;
+}
+.clients_images div:nth-child(2) {
+  margin-top: -8px;
+}
+.clients_image {
+  height: 127px;
+}
+.clients_image, .clients_image_row2 { 
   flex: 0 0 auto;
 }
+.clients_image:nth-child(1) { 
+  height: 120px;
+}
+.clients_image:nth-child(2) { 
+  margin-left: 46px;
+  height: 106px;
+}
+.clients_image:nth-child(3) { 
+  margin-left: 40px;
+}
+.clients_image:nth-child(4) { 
+  margin-left: 22px;
+}
+.clients_image:nth-child(5) { 
+  margin-left: 30px;
+}
+.clients_image:nth-child(6) { 
+  margin-left: 30px;
+  height: 130px;
+}
+
+.clients_image_row2:nth-child(1) { 
+  margin-left: 44px;
+}
+.clients_image_row2:nth-child(2) { 
+  margin-left: 72px;
+  padding-top: 30px;
+}
+.clients_image_row2:nth-child(3) { 
+  margin-left: 49px;
+  padding-top: 32px;
+}
+
 .clients_request {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 40px;
-  margin: 150px auto -10px auto;
+  margin: 64px auto -10px auto;
   color: #686868;
  }
 
@@ -1001,10 +1152,10 @@ body {
 }
 
 .calc-modal .modal-content {
-  width: 613px;
+  width: 610px;
 }
 .calc-modal .calc-form {
-  background: none;
+  background: url(../img/backgroundPrice.jpg);
   box-shadow: none;
   margin: 0;
 }
@@ -1016,6 +1167,7 @@ body {
 .form-control {
   border: 1px solid #939393;
   box-shadow: inset 0 0 5px 1px #939393;
+  padding: 3px 0 0 4px;
 }
 
 .fancybox-button {
@@ -1045,7 +1197,7 @@ input[type="text"], textarea {
 }
 input[type="text"]::placeholder, textarea::placeholder {
   color: #b0b0b0 !important;
-  font-size: 0.9rem;
+  font-size: 14.17px;
 }
 
 
@@ -1463,4 +1615,31 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .popupWrapper2 .catGallery2 .slick-dots .slick-active button {
   background: white;
+}
+
+.custom-checkbox {
+  display: none;
+}
+.custom-checkbox + label{
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  text-align: center;  
+  padding-top: 4px;
+  padding-right: 34px;
+  background: url(../img/checkbox.png) 0 0 no-repeat;
+  background-position: right;
+}
+.custom-checkbox + label:after{
+  position: absolute;
+  right: 0;
+  top: 3px;
+  display: block;
+  content: '';
+  width: 15px;
+  height: 17px;
+  cursor: pointer;
+}
+.custom-checkbox:checked + label:after{
+  background: url(../img/check.png) 1px 0 no-repeat;
 }

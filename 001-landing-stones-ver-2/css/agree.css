@@ -1,0 +1,15 @@
+BODY { max-width: 800px; margin: 0 auto; }
+page { margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.2in }
+P { margin-bottom: 0in; direction: ltr; color: #000000; text-align: justify; widows: 2; orphans: 2 }
+P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ru-RU }
+P.cjk { font-family: "Times New Roman", serif; font-size: 12pt }
+P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+H1 { margin-bottom: 0.04in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+H1.western { font-family: "Calibri"; font-size: 16pt; so-language: ru-RU }
+H1.cjk { font-family: "ＭＳ ゴシック", monospace; font-size: 16pt }
+H1.ctl { font-family: "Times New Roman", serif; font-size: 16pt; so-language: ar-SA }
+H2 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; text-align: justify; widows: 2; orphans: 2 }
+H2.western { font-size: 12pt; so-language: ru-RU; font-weight: normal }
+H2.cjk { font-family: "Times New Roman", serif; font-size: 12pt; font-weight: normal }
+H2.ctl { font-family: "Times New Roman", serif; font-size: 10pt; so-language: ar-SA; font-weight: normal }
+A:link { color: #0000ff }

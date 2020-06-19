@@ -37,7 +37,7 @@ function sendMail($data) {
              "Content-Transfer-Encoding: 7bit" . PHP_EOL .
              "FROM: Onpix <$from>";
 
-            // message
+  // message
   $body = "--" . $separator . PHP_EOL;
   $body .= "Content-Type: text/html; charset=utf-8" . PHP_EOL;
   $body .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
@@ -45,12 +45,17 @@ function sendMail($data) {
 
   // attachment
   $file = $_FILES['file'];
-  $content = file_get_contents($file['tmp_name']);
+  $fileType = $file['type'];
+  $fileName = $file['name'];
+  $handle = fopen($file['tmp_name'], "r");
+  $content = fread($handle, $file['size']);
+  fclose($handle);
   $content = chunk_split(base64_encode($content));
   $body .= "--" . $separator . PHP_EOL;
-  $body .= "Content-Type: application/octet-stream; name=\"" . $file['name'] . "\"" . PHP_EOL;
+  $body .= "Content-Type: $fileType; name=\"" . $fileName . "\"" . PHP_EOL;
   $body .= "Content-Transfer-Encoding: base64" . PHP_EOL;
-  $body .= "Content-Disposition: attachment; filename=\"" . $file['name'] . "\"" . PHP_EOL;
+  $body .= "Content-Disposition: attachment; filename=\"" . $fileName . "\"" . PHP_EOL;
+  $body .= "X-Attachment-Id: " . rand(1000, 99999) . "\r\n\r\n";  
   $body .= $content . PHP_EOL;
   $body .= "--" . $separator . "--";
 

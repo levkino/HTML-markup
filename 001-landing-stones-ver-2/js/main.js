@@ -1,3 +1,5 @@
+const mailRecipient = 'tatyana-arh1@bk.ru, ruslan@petromramor.ru';
+
 // const menu = document.querySelector('.menu');
 // const burger = document.querySelector('.burger');
 // burger.addEventListener('click', function() {
@@ -17,6 +19,19 @@ $(document).ready(function() {
   // Инициализация масок ввода
   $('.phone-input').mask("+7 (000) 000-00-00", {placeholder: "+7 (___) ___-__-__"});
 
+  // Инициализация полей выбора файла с формы запроса цены
+  $('input[type="file"]').change(function() {
+    const textBox = $(this).parent().find('input[type="text"]');
+    textBox.attr("placeholder", this.value.replace(/^.*[\\\/]/, ''));
+  });
+
+  // Инициализация кнопки заказа звонка с формы запроса цены
+  $('.calc-form__call-button').click(function() {
+    const form = $(this).closest('form');
+    const phoneInput = form.find('.calc-form__phone-input');
+    callRequest(phoneInput);
+  });
+
   // Инициализация табов
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
@@ -32,7 +47,7 @@ $(document).ready(function() {
     dots: false,
     rows: 2,
     infinite: true,
-    centerMode: true,
+    centerMode: false,
     centerPadding: '1px',
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -58,21 +73,19 @@ $('a[href*="#"]').on('click', function(e) {
 })
 
 
-function callRequest() {
+function callRequest(phoneInput) {
   const name = document.querySelector('#call-name').value;
   if (!name) {
     // alert('Укажите имя');
     // return;
   }
-  const phone = document.querySelector('#call-phone').value; 
+  const phone = phoneInput ? phoneInput.val() : document.querySelector('#call-phone').value; 
   if (!phone) {
     alert('Укажите телефон');
     return;
   }
   const data = {
-    // recipient: 'tatyana-arh1@bk.ru',
-    recipient: 'levkino@yandex.ru',
-    // recipient: 'stones@petromramor.ru',
+    recipient: mailRecipient,
     title: 'Заказ звонка',
     fields: {
       Имя: name,
@@ -85,6 +98,7 @@ function callRequest() {
   xhr.onreadystatechange = () => {
     if (xhr.status === 200) {
       $('#modal-call').modal('hide');
+      $('#modal-calc').modal('hide');
       $('#modal-thank-you').modal('show');
     } else {
       alert(`Ошибка отправки${xhr.response}`);
@@ -101,20 +115,21 @@ function calcRequest(formNumber) {
     return;
   }
 
-  const email = document.querySelector(`#calc-phone${formNumber}`).value;
+  const email = document.querySelector(`#calc-email${formNumber}`).value;
   if (!email) {
     alert('Укажите электронную почту');
     return;
   }
+
+  const phone = document.querySelector(`#calc-phone${formNumber}`).value;
   
   const data = {
-    // recipient: 'tatyana-arh1@bk.ru',
-    recipient: 'levkino@yandex.ru',
-    // recipient: 'stones@petromramor.ru',
-    title: 'Заказ звонка',
+    recipient: mailRecipient,
+    title: 'Запро цены',
     fields: {
       Вопрос: question,
-      'E-mail': emails
+      'E-mail': email,
+      Телефон: phone
     }
   };
   const fileInput = document.querySelector(`#calc-file${formNumber}`);
