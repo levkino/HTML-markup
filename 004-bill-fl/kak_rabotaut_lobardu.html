@@ -8,6 +8,17 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style type="text/css">
+   A:link { 
+    text-decoration: none; color: #ffffff; /* Убирает подчеркивание для ссылок */
+   } 
+   A:visited { text-decoration: none; color: #ffffff; } 
+   A:active { text-decoration: none; color: #ffffff; }
+   A:hover {
+    text-decoration: none; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: #ff00bd; /* Цвет ссылки */
+   } 
+  </style>
 </head>
 
 <body>
@@ -63,14 +74,14 @@
                 <li><a href="/startups.html">Стартапы</a></li>
                 <li><a href="/tours.html">Турфирмы</a></li>
                 <li><a href="/education.html">Образовательные проекты</a></li>
-                <li><a href="#">Индивидуальное решение</a></li>
+                <li><a href="/index.html#form">Индивидуальное решение</a></li>
               </div>
             </div>
           </div>
           <a href="https://docs.4bill.io" class="menu-item">API документация </a>
           <a href="/contacts.html" class="menu-item">Контакты</a>
         </nav>
-        <a href="#" class="login-btn">
+        <a href="https://cabinet.4bill.io/login" class="login-btn">
           <span>Личный кабинет</span>
         </a>
       </div>
@@ -80,13 +91,19 @@
     <div class="container">
       <div class="wrapper">
         <nav class="navigation" id="menu">
-          <a href="about-us.html" class="menu-item">
+          <div href="#" class="menu-item">
 
             <span>
               О нас
               <img src="assets/img/shevron-down.png" alt="" />
             </span>
-          </a>
+            <div class="sub-menu">
+              <li><a href="/about-us.html">О нас</a></li>
+              <li><a href="/team.html">Команда</a></li>
+              <li><a href="/news.html">Новости</a></li>
+            </div>
+          </div>
+
           <div href="#" class="menu-item">
 
             <span>
@@ -100,18 +117,18 @@
               <li><a href="/startups.html">Стартапы</a></li>
               <li><a href="/tours.html">Турфирмы</a></li>
               <li><a href="/education.html">Образовательные проекты</a></li>
-              <li><a href="#">Индивидуальное решение</a></li>
+              <li><a href="/index.html#form">Индивидуальное решение</a></li>
             </div>
           </div>
-          <a href="#" class="menu-item">API документация </a>
-          <a href="contacts.html" class="menu-item">Контакты</a>
+          <a href="https://docs.4bill.io/" class="menu-item">API документация </a>
+          <a href="/contacts.html" class="menu-item">Контакты</a>
         </nav>
         <div class="logo">
           <a href="index.html">
             <img src="assets/img/logo.png" alt="">
           </a>
         </div>
-        <a href="#" class="login-btn">
+        <a href="https://cabinet.4bill.io/login" class="login-btn">
           <span>Личный кабинет</span>
         </a>
         <div class="menu-button" id="menu-btn">
@@ -170,41 +187,39 @@
         <div class="navigation-dot navigation-dot_right" id="prev">
           <img src="assets/img/arrow-right.svg" alt="">
         </div>
-        <h3>Схожі статті</h3>
+        <h3>Похожие статьи</h3>
         <div class="slider" id="posts-slider">
           <div class="post post_small">
-            <img src="assets/img/news.png" class="post__image" alt="">
+            <img src="assets/img/newszakon.png" class="post__image" alt="">
             <div class="post__content">
-              <div class="post__title">Безналичная оплата QR-кодом в вендинг автомате </div>
-              <div class="post__text">Scientists say they have found a strange transition state in liquid water. The
-                findings were published in the International Journal of Nanotechnology.</div>
+              <div class="post__title"><a href="/zakon_o_plateshnih_servisach.html">Как новый закон отразится на платежных сервисах и украинцах?</a></div>
+              <div class="post__text">Все уже слышали? С 28 апреля 2020 года в Украине вступает в силу новый Закон «О предотвращении и противодействии легализации (отмыванию) доходов, полученных ...</div>
               <div class="post__footer">
-                <div class="date">МАРТ 27, 2017</div>
-                <div class="time">8 min </div>
+                <div class="date">ИЮНЬ 9, 2020</div>
+                <div class="time">09.06.20</div>
               </div>
             </div>
           </div>
           <div class="post post_small">
-            <img src="assets/img/news.png" class="post__image" alt="">
+            <img src="assets/img/newszero.png" class="post__image" alt="">
             <div class="post__content">
-              <div class="post__title">Безналичная оплата QR-кодом в вендинг автомате </div>
-              <div class="post__text">Scientists say they have found a strange transition state in liquid water. The
-                findings were published in the International Journal of Nanotechnology.</div>
+              <div class="post__title"><a href="/verificaciya_kart_s_nulevum_balansom.html">Верификация банковских карт с нулевым балансом?</a></div>
+              <div class="post__text">Если вы развиваете свой бизнес в сфере микрокредитования населения или предоставления услуг, то неразрывно связаны с онлайн-платежами. При оформлении заявки онлайн клиенту
+...</div>
               <div class="post__footer">
-                <div class="date">МАРТ 27, 2017</div>
-                <div class="time">8 min </div>
+                <div class="date">ИЮНЬ 7, 2020</div>
+                <div class="time">07.06.20</div>
               </div>
             </div>
           </div>
           <div class="post post_small">
-            <img src="assets/img/news.png" class="post__image" alt="">
+            <img src="assets/img/newslombard.png" class="post__image" alt="">
             <div class="post__content">
-              <div class="post__title">Безналичная оплата QR-кодом в вендинг автомате </div>
-              <div class="post__text">Scientists say they have found a strange transition state in liquid water. The
-                findings were published in the International Journal of Nanotechnology.</div>
+              <div class="post__title"><a href="/kak_rabotaut_lobardu.html">Как работают ломбарды во время карантина?</a></div>
+              <div class="post__text">Деятельность ломбардов и других финансовых учреждений в Украине с момента объявления карантина то ограничивали, то запрещали полностью....</div>
               <div class="post__footer">
-                <div class="date">МАРТ 27, 2017</div>
-                <div class="time">8 min </div>
+                <div class="date">ИЮНЬ 8, 2020</div>
+                <div class="time">08.06.20</div>
               </div>
             </div>
           </div>
@@ -232,7 +247,7 @@
           <div class="contacts">
             <div class="contact">
               <img src="assets/img/001-phone-call.png" alt="">
-              <span>+38 (044) 300 28 59</span>
+              <a href="tel:+380443002859">+38 (044) 300 28 59</a>
             </div>
             <div class="contact">
               <img src="assets/img/002-placeholder.png" alt="">
@@ -336,7 +351,7 @@
             <div class="form__bottom">
               <span class="acceptance">
                 <label for="accept" class="accept">
-                  <input type="checkbox" id="accept" checked required>
+                  <input type="checkbox" id="accept" required>
                   <span></span>
 
                   Я согласен с условиями

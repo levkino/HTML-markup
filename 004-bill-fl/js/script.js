@@ -16,6 +16,10 @@ const clearAllActive = () => {
   })
 }
 
+
+
+
+
 advantages.forEach((advantage, i) => {
   advantage.addEventListener('click', (e) => {
 
@@ -35,6 +39,16 @@ menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('burger_open');
   menu.classList.toggle('menu_open');
 });
+
+
+const menuItemMobile = document.querySelectorAll('.header_mobile .navigation .menu-item');
+
+for (var ii = 0; ii < menuItemMobile.length; ++ii) {
+  menuItemMobile[ii].addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+}
+
 
 $(document).ready(function () {
   const marquee = $('.partners__logos');
@@ -91,16 +105,23 @@ form.addEventListener('submit', async (e) => {
   let site = form.querySelector('#site').value;
   let message = form.querySelector('#message').value;
 
-  let body = new FormData(form);
+  let formData = new FormData(form);
 
+  // let response = await fetch('/mail.php', {
+  //   method: 'POST',
+  //   body
+  // })
 
+  // response = await response.json();
 
-  let response = await fetch('/mail.php', {
-    method: 'POST',
-    body
-  })
-
-  response = await response.json();
-
-  this.toggleModal();
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'mail.php');
+  xhr.onreadystatechange = () => {
+    if (xhr.status === 200) {
+      toggleModal();
+    } else {
+      alert(`Ошибка отправки${xhr.response}`);
+    }
+  };
+  xhr.send(formData);
 })
