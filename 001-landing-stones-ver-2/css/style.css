@@ -19,6 +19,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 body {
   font-family: 'Roboto', sans-serif;
+  padding-right: 0 !important;
+  overflow: -moz-scrollbars-vertical !important; 
+  overflow-y: scroll !important;
+}
+
+.modal {
+  padding-left: 21px;
+}
+.modal-open {
+  padding-right: 0 !important;
 }
 
 .header {
@@ -472,6 +482,20 @@ body {
   left: 10px;
   width: 25px;
 }
+.calc-form__file-close-img {
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  cursor: pointer;
+  opacity: .5;
+}
+.calc-form__file-close-img:hover {
+  opacity: .7;
+}
 .calc-form__file-input { 
   font-size: 17px;
   padding-left: 40px !important;
@@ -535,6 +559,10 @@ body {
   width: 270px;
   height: 33px;
   padding-top: 8px;
+}
+.calc-form__send-button:disabled, .calc-form__call-button:disabled { 
+  background-color: #afaaaa;
+  cursor: default;
 }
 .calc-form__forth-row { 
   display: flex;
@@ -652,6 +680,10 @@ body {
   height: 38px;
   padding-top: 11px !important;
   padding-right: 10px;
+}
+.call-form__send-button:disabled { 
+  background-color: #afaaaa;
+  cursor: default;
 }
 .call-form__send-button span { 
   font-size: 18px;
@@ -852,7 +884,7 @@ body {
 }
 .production__desc {
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 20px;
   margin: 0 30px 0 55px;
   text-align: justify;
 }
@@ -986,7 +1018,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 45px;
+  margin-left: 34px;
 }
 .clients_images div:nth-child(2) {
   margin-top: -8px;
@@ -1034,6 +1066,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 40px;
+  text-align: center;
   margin: 64px auto -10px auto;
   color: #686868;
  }
@@ -1132,6 +1165,11 @@ body {
   color: #fff;
 }
 
+
+.modal-thank-you {
+  z-index: 1055;
+}
+
 .thank-you {
   width: 420px;
   text-align: center;
@@ -1151,6 +1189,9 @@ body {
   margin-top: 20px;
 }
 
+.calc-modal {
+  max-width: 610px !important;
+}
 .calc-modal .modal-content {
   width: 610px;
 }
@@ -1213,11 +1254,15 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .popupBack {
   width: 775px;
-  height: 991px;
   background: url(../img/popup-border.jpg) 0 -4px no-repeat;
   background-size: 100% calc(100% + 4px);
   padding: 50px 0 0 0;
   border-radius: 8px;
+}
+.popupBack::after {
+  display: block;
+  content: '';
+  height: 80px;
 }
 .popupWrapper h3 {
   font-size: 22.68px;
@@ -1228,6 +1273,13 @@ input[type="text"]::placeholder, textarea::placeholder {
 .popupWrapper .productionGallery {
   width: 634px;
   margin: 0 auto;
+}
+.popupWrapper .productionGallery::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 57px);
+  content: '';
   box-shadow: 3px 3px 10px 0 #777777;
 }
 .popupWrapper .productionGallery img {
@@ -1255,7 +1307,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   overflow: hidden;
   opacity: 0.5;
   position: absolute;
-  top: 42.6%;
+  top: 38%;
 }
 .popupWrapper .productionGallery .slick-arrow:hover {
   opacity: 1;
@@ -1270,7 +1322,7 @@ input[type="text"]::placeholder, textarea::placeholder {
 .popupWrapper .productionGallery .slick-dots {
   margin: 0;
   position: absolute;
-  bottom: 27px;
+  bottom: 83px;
   padding: 0;
   list-style: none;
   left: 50%;
@@ -1303,7 +1355,7 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .popupText {
   font-size: 14.17px;
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #414141;
   margin: 0px auto 0 20px;
   text-align: justify;
@@ -1355,7 +1407,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   background: url(../img/backgroundPrice.jpg);
   border-radius: 5px;
   box-shadow: 3px 3px 10px 3px #9a9a9a;
- }
+}
 .popupButtonsWrapper a {
   flex: 0 0 auto;
   display: flex;
@@ -1421,11 +1473,15 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .popupBack2 {
   width: 775px;
-  height: 1208px;
   background: url(../img/popup-border2.jpg) 0 -4px no-repeat;
   background-size: 100% calc(100% + 4px);
   padding: 50px 0 0 0;
   border-radius: 8px;
+}
+.popupBack2::after {
+  display: block;
+  content: '';
+  height: 80px;
 }
 .popupWrapper2 h3 {
   font-size: 22.68px;
@@ -1436,6 +1492,13 @@ input[type="text"]::placeholder, textarea::placeholder {
 .popupWrapper2 .catGallery {
   width: 634px;
   margin: 0 auto;
+}
+.popupWrapper2 .catGallery::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 57px);
+  content: '';
   box-shadow: 3px 3px 10px 0 #777777;
 }
 .popupWrapper2 .catGallery img {
@@ -1463,7 +1526,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   overflow: hidden;
   opacity: 0.5;
   position: absolute;
-  top: 42.6%;
+  top: 38%;
 }
 .popupWrapper2 .catGallery .slick-arrow:hover {
   opacity: 1;
@@ -1478,7 +1541,7 @@ input[type="text"]::placeholder, textarea::placeholder {
 .popupWrapper2 .catGallery .slick-dots {
   margin: 0;
   position: absolute;
-  bottom: 27px;
+  bottom: 83px;
   padding: 0;
   list-style: none;
   left: 50%;
@@ -1642,4 +1705,28 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .custom-checkbox:checked + label:after{
   background: url(../img/check.png) 1px 0 no-repeat;
+}
+
+
+.modal-need { }
+.modal-need > div { 
+  width: 250px;
+}
+#modal-need-email > div { 
+  width: 310px !important;
+}
+.modal-need-content { 
+  padding: 20px;
+}
+.modal-need-content h3 { 
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+.button-ok { 
+  width: 100px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }

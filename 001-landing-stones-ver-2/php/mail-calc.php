@@ -17,7 +17,7 @@ function createMessage($fields) {
     " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
       <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
       <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-      </tr>";
+      </tr><br/>";
     }
   return "<table style='width: 100%;'>$message</table>";
 }
@@ -44,20 +44,22 @@ function sendMail($data) {
   $body .= $data['message'] . PHP_EOL;
 
   // attachment
-  $file = $_FILES['file'];
-  $fileType = $file['type'];
-  $fileName = $file['name'];
-  $handle = fopen($file['tmp_name'], "r");
-  $content = fread($handle, $file['size']);
-  fclose($handle);
-  $content = chunk_split(base64_encode($content));
-  $body .= "--" . $separator . PHP_EOL;
-  $body .= "Content-Type: $fileType; name=\"" . $fileName . "\"" . PHP_EOL;
-  $body .= "Content-Transfer-Encoding: base64" . PHP_EOL;
-  $body .= "Content-Disposition: attachment; filename=\"" . $fileName . "\"" . PHP_EOL;
-  $body .= "X-Attachment-Id: " . rand(1000, 99999) . "\r\n\r\n";  
-  $body .= $content . PHP_EOL;
-  $body .= "--" . $separator . "--";
+  if (!empty($_FILES['file'])) {
+    $file = $_FILES['file'];
+    $fileType = $file['type'];
+    $fileName = $file['name'];
+    $handle = fopen($file['tmp_name'], "r");
+    $content = fread($handle, $file['size']);
+    fclose($handle);
+    $content = chunk_split(base64_encode($content));
+    $body .= "--" . $separator . PHP_EOL;
+    $body .= "Content-Type: $fileType; name=\"" . $fileName . "\"" . PHP_EOL;
+    $body .= "Content-Transfer-Encoding: base64" . PHP_EOL;
+    $body .= "Content-Disposition: attachment; filename=\"" . $fileName . "\"" . PHP_EOL;
+    $body .= "X-Attachment-Id: " . rand(1000, 99999) . "\r\n\r\n";  
+    $body .= $content . PHP_EOL;
+    $body .= "--" . $separator . "--";
+  }
 
   var_dump(mail($to, $title, $body, $headers));
 }

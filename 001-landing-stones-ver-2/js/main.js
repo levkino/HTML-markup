@@ -1,4 +1,5 @@
 const mailRecipient = 'tatyana-arh1@bk.ru, ruslan@petromramor.ru';
+// const mailRecipient = 'olevkino@gmail.com';
 
 // const menu = document.querySelector('.menu');
 // const burger = document.querySelector('.burger');
@@ -22,14 +23,42 @@ $(document).ready(function() {
   // Инициализация полей выбора файла с формы запроса цены
   $('input[type="file"]').change(function() {
     const textBox = $(this).parent().find('input[type="text"]');
-    textBox.attr("placeholder", this.value.replace(/^.*[\\\/]/, ''));
+    const closeButton = $(this).parent().find('.calc-form__file-close-img');
+    closeButton.show();
+    textBox.val(this.value.replace(/^.*[\\\/]/, ''));
+    textBox.blur();
+  });
+
+  $('.calc-form__file-close-img').click(function(e) {
+    const input = $(this).parent().prev();
+    const textBox = $(this).prev();
+    input.val('');
+    textBox.val('');
+    $(this).hide();
+    e.stopPropagation();
   });
 
   // Инициализация кнопки заказа звонка с формы запроса цены
-  $('.calc-form__call-button').click(function() {
+  $('.calc-form .calc-form__call-button').click(function() {
     const form = $(this).closest('form');
     const phoneInput = form.find('.calc-form__phone-input');
-    callRequest(phoneInput);
+    if (phoneInput.length && phoneInput.val() && phoneInput.val().length > 10)
+      calcRequest($(this).attr('data'), true);
+    else 
+      showCallForm();
+  });
+
+  // Инициализация кнопки согласия обработки персональных данных
+  $('.calc-form__agree-check').change(function() {
+    const form = $(this).closest('form');
+    const buttonCalc = form.find('.calc-form__send-button');
+    const buttonCall = form.find('.calc-form__call-button');
+    const phoneInput = form.find('.calc-form__phone-input');
+    const isCalc = buttonCalc.length;
+    const oldVal = isCalc ? buttonCalc.prop('disabled') : buttonCall.prop('disabled');
+    buttonCalc.prop('disabled', !oldVal);
+    if (!isCalc || (phoneInput.length && phoneInput.val() && phoneInput.val().length > 10) || buttonCall.prop('disabled'))
+      buttonCall.prop('disabled', !oldVal);
   });
 
   // Инициализация табов
@@ -81,7 +110,7 @@ function callRequest(phoneInput) {
   }
   const phone = phoneInput ? phoneInput.val() : document.querySelector('#call-phone').value; 
   if (!phone) {
-    alert('Укажите телефон');
+    $('#modal-need-phone').modal('show');
     return;
   }
   const data = {
@@ -108,24 +137,23 @@ function callRequest(phoneInput) {
   return false;
 }
 
-function calcRequest(formNumber) {
+function calcRequest(formNumber, isCallRequest) {
   const question = document.querySelector(`#calc-question${formNumber}`).value;
-  if (!question) {
-    alert('Укажите вопрос');
-    return;
-  }
-
-  const email = document.querySelector(`#calc-email${formNumber}`).value;
-  if (!email) {
-    alert('Укажите электронную почту');
+  if (!question && !isCallRequest) {
+    $('#modal-need-question').modal('show');
     return;
   }
 
   const phone = document.querySelector(`#calc-phone${formNumber}`).value;
+  const email = document.querySelector(`#calc-email${formNumber}`).value;
+  if (!email && !phone && !isCallRequest) {
+    $('#modal-need-email').modal('show');
+    return;
+  }
   
   const data = {
     recipient: mailRecipient,
-    title: 'Запро цены',
+    title: 'Запрос цены',
     fields: {
       Вопрос: question,
       'E-mail': email,
@@ -153,6 +181,7 @@ function calcRequest(formNumber) {
 
 function showCallForm() {
   $.fancybox.close();
+  $('#modal-calc').modal('hide');
   $('#modal-call').modal('show');
   return false;
 }

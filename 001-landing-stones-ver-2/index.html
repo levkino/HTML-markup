@@ -58,7 +58,7 @@
         <div class="header__line animate__animated animate__fadeInUp"></div>
         <div class="header__subtitle animate__animated animate__fadeInUp">с 2002 года</div>
         <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Рассчитать стоимость</div>
-        <a class="header__arrow animate__animated animate__fadeInUp" href="#advantages"></a>
+        <a class="header__arrow animate__animated animate__fadeInUp" href="#map"></a>
       </div>
     </header>
 
@@ -126,7 +126,7 @@
               <div class="production__back-second"></div>
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
-                  <a class="production__item-min">
+                  <a class="production__item-min" onclick="loadForm('production2.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production2.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -135,7 +135,7 @@
                       Плиты мощения
                     </div>
                   </a>
-                  <a class="production__item-min production__bottom">
+                  <a class="production__item-min production__bottom" onclick="loadForm('production3.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production4.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -146,7 +146,7 @@
                   </a>
                 </div>
                 <div class="col flex-grow-0">
-                  <a class="production__item-long">
+                  <a class="production__item-long" onclick="loadForm('production4.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production12.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -160,7 +160,7 @@
             </div>
             <div class="production__column production__last-column">
               <div class="production__back-third"></div>
-              <a class="production__item-min production__item-min">
+              <a class="production__item-min production__item-min" onclick="loadForm('production5.html')" data-fancybox data-src="#popup_all">
                 <img src="img/production3.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
@@ -169,7 +169,7 @@
                   Брусчатка
                 </div>
               </a>
-              <a class="production__item-min production__item-min production__bottom">
+              <a class="production__item-min production__item-min production__bottom" onclick="loadForm('production6.html')" data-fancybox data-src="#popup_all">
                 <img src="img/production5.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
@@ -185,7 +185,7 @@
               <div class="production__back-forth"></div>
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
-                  <a class="production__item-min">
+                  <a class="production__item-min" onclick="loadForm('production7.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production6.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -194,7 +194,7 @@
                       Лестницы и балюстрады
                     </div>
                   </a>
-                  <a class="production__item-min production__bottom">
+                  <a class="production__item-min production__bottom" onclick="loadForm('production8.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production8.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -205,7 +205,7 @@
                   </a>
                 </div>
                 <div class="col flex-grow-0">
-                  <a class="production__item-min">
+                  <a class="production__item-min" onclick="loadForm('production9.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production7.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -214,7 +214,7 @@
                       Фонтаны и памятники
                     </div>
                   </a>
-                  <a class="production__item-min production__bottom">
+                  <a class="production__item-min production__bottom" onclick="loadForm('production10.html')" data-fancybox data-src="#popup_all">
                     <img src="img/production9.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
@@ -228,7 +228,7 @@
             </div>
             <div class="production__column">
               <div class="production__back-firth"></div>
-              <a class="production__item-big">
+              <a class="production__item-big" onclick="loadForm('production11.html')" data-fancybox data-src="#popup_all">
                 <img src="img/production10.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
@@ -240,7 +240,7 @@
             </div>
             <div class="production__column production__last-column">
               <div class="production__back-six"></div>
-              <a class="production__item-long">
+              <a class="production__item-long" onclick="loadForm('production12.html')" data-fancybox data-src="#popup_all">
                 <img src="img/production13.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
@@ -266,6 +266,7 @@
               <div class="calc-form__file-field" onclick="$('#calc-file1').click()">
                 <img class="calc-form__file-img" src="img/fileInput.png" alt="">
                 <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+                <img class="calc-form__file-close-img" src="img/close2.png" alt="">
               </div>
             </div>
             <div class="calc-form__email">
@@ -285,12 +286,12 @@
             <button class="calc-form__send-button blue-button" onclick="calcRequest(1)">Отправить</button>
           </div>
           <div class="calc-form__forth-row">
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
             <div class="calc-form__call">
-              <button class="calc-form__call-button blue-button">
+              <button class="calc-form__call-button blue-button" data="1">
                 <img src="img/requestTelephoneOutlineLight.png" alt="">
                 <span>Заказать звонок</span>
               </button>
@@ -316,97 +317,97 @@
       
           <div class="tabs__content active">
             <div class="stoneBlocks">
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog1.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog2.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>Каменногорское гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog3.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone3.jpg" alt="" />
                 <div class="stoneText">
                   <div>Возрождение гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog4.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone4.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ладожское гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog5.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone5.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog6.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone6.jpg" alt="" />
                 <div class="stoneText">
                   <div>Другорецкое габбро-диабаз</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog7.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone7.jpg" alt="" />
                 <div class="stoneText">
                   <div>Елизовское граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog8.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone8.jpg" alt="" />
                 <div class="stoneText">
                   <div>Мансуровский гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+              <div class="stoneBlock" onclick="loadForm2('catalog9.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog10.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>Каменногорское гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog11.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone3.jpg" alt="" />
                 <div class="stoneText">
                   <div>Возрождение гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog12.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone4.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ладожское гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog1.html')" data-fancybox data-src="#popup_all2">
+              <div class="stoneBlock" onclick="loadForm2('catalog13.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone5.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog14.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone6.jpg" alt="" />
                 <div class="stoneText">
                   <div>Другорецкое <span>габбро-диабаз</span></div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog15.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone7.jpg" alt="" />
                 <div class="stoneText">
                   <div>Елизовское граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog16.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone8.jpg" alt="" />
                 <div class="stoneText">
                   <div>Мансуровский гранит</div>
@@ -417,61 +418,61 @@
       
           <div class="tabs__content">
             <div class="stoneBlocks">
-              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+              <div class="stoneBlock" onclick="loadForm2('catalog17.html')" data-fancybox data-src="#popup_all2" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа гранит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog18.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>Каменногорское гранит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog19.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone3.jpg" alt="" />
                 <div class="stoneText">
                   <div>Возрождение гранит2</div>
                 </div>
               </div>
-              <!-- <div class="stoneBlock">
+              <!-- <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone4.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ладожское гранит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone5.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский граносиенит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone6.jpg" alt="" />
                 <div class="stoneText">
                   <div>Другорецкое габбро-диабаз2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone7.jpg" alt="" />
                 <div class="stoneText">
                   <div>Елизовское граносиенит2</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone8.jpg" alt="" />
                 <div class="stoneText">
                   <div>Мансуровский гранит2</div>
                 </div>
               </div>
-              <div class="stoneBlock" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>2Ала-Носкуа гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>2Каменногорское гранит</div>
@@ -482,61 +483,61 @@
       
           <div class="tabs__content">
             <div class="stoneBlocks">
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog20.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа3 гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog21.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>Каменногорское3 гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog22.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone3.jpg" alt="" />
                 <div class="stoneText">
                   <div>Возрождение3 гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog23.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone4.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ладожское3 гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog24.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone5.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский3 граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog25.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone6.jpg" alt="" />
                 <div class="stoneText">
                   <div>Другорецкое3 габбро-диабаз</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog26.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone7.jpg" alt="" />
                 <div class="stoneText">
                   <div>Елизовское3 граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog27.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone8.jpg" alt="" />
                 <div class="stoneText">
                   <div>Мансуровский3 гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog28.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone1.jpg" alt="" />
                 <div class="stoneText">
                   <div>Ала-Носкуа 3гранит</div>
                 </div>
               </div>
-              <div class="stoneBlock">
+              <div class="stoneBlock" onclick="loadForm2('catalog29.html')" data-fancybox data-src="#popup_all2">
                 <img src="img/stone2.jpg" alt="" />
                 <div class="stoneText">
                   <div>Каменногорское 3гранит</div>
@@ -577,9 +578,9 @@
             </div>
           </div>
           <div class="production__desc">
-            Производственная база и склады компании «ПетроМрамор» расположены на собственной территории в пригороде Санкт-Петербурга - городе Всеволожск. Всеволожский Камнеобрабатывающий Завод №1 (ВКЗ-1), расположенный на улице Шишканя, успешно работает с 2002 года и выпускает все виды продукции из гранита и мрамора. С июля 2017 года на территории Промзоны "Кирпичный завод" запущена первая очередь второго завода (ВКЗ-2), специализирующегося на производстве плит мощения, облицовочных плит и строительно-дорожных изделиях.
-            В октябре 2019 запущена вторая очередь на втором заводе.<br/><br/>
-            Современное итальянское оборудование, квалифицированный персонал и применение передовых технологий обработки природного камня позволяют нам производить высококачественные изделия из натурального камня любого уровня сложности, в том числе выполнять заказы, связанные с производством больших объемов изделий широкого ассортимента из гранита и мрамора в сжатые сроки для выполнения комплексных поставок на строительные объекты.
+            Производственная Компания "ПетроМрамор" успешно работает на рынке изделий из натурального камня с 2002 года и является одним из ведущих предприятий отрасли. Два собственных завода выпускают ежемесячно более 8 000 кв.м. высококачественных изделий из гранита и мрамора различной сложности.<br/><br/>
+            На протяжении многих лет самые требовательные и взыскательные заказчики стали нашими постоянными клиентами, доверяют нам выполнение наиболее сложных и ответственных работ, связанных с обработкой натурального камня.<br/><br/>
+            Современное итальянское оборудование, квалифицированный персонал и применение передовых технологий обработки природного камня позволяют нам производить изделия из натурального камня любого уровня сложности, в том числе выполнять заказы, связанные с производством больших объемов изделий широкого ассортимента из камня в сжатые сроки для выполнения комплексных поставок.
           </div>
         </div>
 
@@ -650,6 +651,7 @@
               <div class="calc-form__file-field" onclick="$('#calc-file2').click()">
                 <img class="calc-form__file-img" src="img/fileInput.png" alt="">
                 <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+                <img class="calc-form__file-close-img" src="img/close2.png" alt="">
               </div>
             </div>
             <div class="calc-form__email">
@@ -663,18 +665,18 @@
           </div>
           <div class="calc-form__agree-row">
             <input id="agree2" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
-            <label class="calc-form__agree-text" for="agree1">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
+            <label class="calc-form__agree-text" for="agree2">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
           </div>
           <div class="calc-form__third-row">
             <button class="calc-form__send-button blue-button" onclick="calcRequest(2)">Отправить</button>
           </div>
           <div class="calc-form__forth-row">
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
             <div class="calc-form__call">
-              <button class="calc-form__call-button blue-button">
+              <button class="calc-form__call-button blue-button" data="2">
                 <img src="img/requestTelephoneOutlineLight.png" alt="">
                 <span>Заказать звонок</span>
               </button>
@@ -700,7 +702,7 @@
                 <img src="img/phoneWhite.png" alt="" class="map__phone-icon">
                 <span class="map__phone-title">+7 (999) 221-70-00</span>
               </a>
-              <a href="https://wa.me/79992217000">
+              <a href="https://wa.me/79992217000" target="blank">
                 <img src="img/whatsapp.png" alt="" class="map__phone-whatsapp">
               </a>
             </div>
@@ -718,7 +720,7 @@
             </div>
             <a href="mailto:stones@petromramor.ru" class="map__mail">stones@petromramor.ru</a>
             <span class="map__prev-site">Переход на предыдущую версию сайта</span>
-            <a href="https://petromramor.ru" class="map__site">www.petromramor.ru</a>
+            <a href="https://petromramor.ru" class="map__site" target="blank">www.petromramor.ru</a>
           </div>
         </div>
       </section>
@@ -741,14 +743,14 @@
               <input id="call-phone" type="text" class="call-form__phone-input phone-input form-control"></input>
             </div>
             <div class="call-form__agree-row calc-form__agree-row">
-              <input id="agree1" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
-              <label class="calc-form__agree-text" for="agree1">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
+              <input id="agree3" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+              <label class="calc-form__agree-text" for="agree3">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
             </div>
             <button class="call-form__send-button calc-form__call-button blue-button" onclick="callRequest()">
               <img src="img/requestTelephoneOutlineLight.png" alt="">
               <span>Заказать звонок</span>
             </button>
-            <a class="call-form__whatsapp-button calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+            <a class="call-form__whatsapp-button calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -774,6 +776,7 @@
                 <div class="calc-form__file-field" onclick="$('#calc-file3').click()">
                   <img class="calc-form__file-img" src="img/fileInput.png" alt="">
                   <input type="text" class="calc-form__file-input form-control" placeholder="Обзор...">
+                  <img class="calc-form__file-close-img" src="img/close2.png" alt="">
                 </div>
               </div>
               <div class="calc-form__email">
@@ -786,19 +789,19 @@
               </div>
             </div>
             <div class="calc-form__agree-row">
-              <input id="agree3" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
-              <label class="calc-form__agree-text" for="agree3">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
+              <input id="agree4" class="calc-form__agree-check custom-checkbox" type="checkbox" checked>
+              <label class="calc-form__agree-text" for="agree4">Я согласен (согласна) на обработку моих <a class="calc-form__agree-link" href="./agree.html" target="blank">персональных данных</a></label>
             </div>
             <div class="calc-form__third-row">
               <button class="calc-form__send-button blue-button" onclick="calcRequest(3)">Отправить</button>
             </div>
             <div class="calc-form__forth-row">
-              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000">
+              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
                 <img src="img/whatsapp.png" alt="">
                 <span>Написать в WhatsApp</span>
               </a>
               <div class="calc-form__call">
-                <button class="calc-form__call-button blue-button">
+                <button class="calc-form__call-button blue-button" data="3">
                   <img src="img/requestTelephoneOutlineLight.png" alt="">
                   <span>Заказать звонок</span>
                 </button>
@@ -818,11 +821,47 @@
     </div>
     
     <!-- Окно успешной отправки заявки -->
-    <div id="modal-thank-you" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div id="modal-thank-you" class="modal fade modal-thank-you" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content thank-you">
           <img src="img/checkMark.png" alt=""/>
           <h3>Спасибо!<br /> Ваша заявка отправлена!</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно укажите телефон -->
+    <div id="modal-need-phone" class="modal fade modal-need" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-need-content">
+          <div class="modal-body">
+            <h3>Укажите телефон</h3>
+          </div>
+          <button type="button" class="btn btn-outline-secondary button-ok" data-dismiss="modal">ОК</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно укажите электронную почту -->
+    <div id="modal-need-email" class="modal fade modal-need" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-need-content">
+          <div class="modal-body">
+            <h3>Укажите электронную почту</h3>
+          </div>
+          <button type="button" class="btn btn-outline-secondary button-ok" data-dismiss="modal">ОК</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно укажите вопрос -->
+    <div id="modal-need-question" class="modal fade modal-need" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-need-content">
+          <div class="modal-body">
+            <h3>Укажите вопрос</h3>
+          </div>
+          <button type="button" class="btn btn-outline-secondary button-ok" data-dismiss="modal">ОК</button>
         </div>
       </div>
     </div>
