@@ -1,4 +1,4 @@
-const mailRecipient = 'tatyana-arh1@bk.ru, ruslan@petromramor.ru';
+const mailRecipient = 'ruslan@petromramor.ru';
 // const mailRecipient = 'olevkino@gmail.com';
 
 // const menu = document.querySelector('.menu');
