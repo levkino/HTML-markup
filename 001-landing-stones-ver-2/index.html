@@ -51,7 +51,6 @@
           <a class="header__menu-item" href="#productions">Изделия</a>
           <a class="header__menu-item" href="#catalog">Каталог камня</a>
           <a class="header__menu-item" href="#production">Производство</a>
-          <!-- <a class="header__menu-item header__menu-item-active" href="#">Объекты</a> -->
           <a class="header__menu-item" href="#map">Контакты</a>
         </div>
         <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ ДЛЯ СТРОИТЕЛЬСТВА И ОТДЕЛКИ</h1>
@@ -62,8 +61,47 @@
       </div>
     </header>
 
+    <header class="header-mobile">
+      <div class="header__wrapper">
+        <navbar class="navbar">
+          <div class="burger">
+            <div class="burger__box">
+              <div class="burger__inner"></div>
+            </div>
+          </div>
+          <a class="logo" href="#"><img src="img/logo-mini.png" alt="" /></a>
+        </navbar>
+        <div class="menu">
+          <div>
+            <a href="#productions2" class="menu__item">Изделия</a>
+            <a href="#catalog" class="menu__item">Каталог камня</a>
+            <a href="#production2" class="menu__item">Производство</a>
+            <a href="#calc-header" class="menu__item">Запрос цены</a>
+            <a href="#map" class="menu__item">Контакты</a>
+          </div>
+          <div class="line"></div>
+          <div>
+            <a class="menu__tel-button blue-button" href="tel:79992217000">
+              <img src="img/phoneRound.png" alt="">
+              <span>+7 (999) 221-70-00</span>
+            </a>
+            <a class="menu__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+              <img src="img/whatsapp.png" alt="">
+              <span>Написать в WhatsApp</span>
+            </a>
+          </div>
+        </div>
+    
+        <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ</h1>
+        <div class="header__line animate__animated animate__fadeInUp"></div>
+        <div class="header__subtitle animate__animated animate__fadeInUp">с 2002 года</div>
+        <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Рассчитать стоимость</div>
+        <a class="header__arrow animate__animated animate__fadeInUp" href="#map"></a>
+      </div>
+    </header>
+
     <main>
-      <section id="advantages" class="section advantages">
+      <section id="advantages" class="section advantages desktop">
         <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">Наши преимущества</h1>
         <div class="advantages__items wow animate__animated animate__fadeInUp">
           <div class="advantage-items__line"></div>
@@ -106,7 +144,32 @@
         <div/>
       </section>
 
-      <section id="productions" class="section productions">
+      <section class="section advantages mobile">
+        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">Ваша выгода</h1>
+        <div class="advantages__items wow animate__animated animate__fadeInUp">
+          <div class="advantage-items__line"></div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_dev" src="img/individual.png" alt="">
+            </div>
+            <div class="advantage-item__text">Разработка индивидуальных проектов</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_car" src="img/truck.png" alt="">
+            </div>
+            <div class="advantage-item__text">Доставка<br/>по всей<br/>России</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon advantage-item__icon_quality" src="img/document.png" alt="">
+            </div>
+            <div class="advantage-item__text">Качество соответствует ГОСТ</div>
+          </div>
+        <div/>
+      </section>
+
+      <section id="productions" class="section productions desktop">
         <h1 class="section__header productions__header wow animate__animated animate__fadeInUp">Наша продукция</h1>
         <div class="productions__items production wow animate__animated animate__fadeInUp">
           <div class="production__row">
@@ -299,6 +362,168 @@
           </div>
         </form>
 
+      </section>
+      
+      <section id="productions2" class="section productions mobile">
+        <h1 class="section__header productions__header wow animate__animated animate__fadeInUp">Наша продукция</h1>
+        <div class="productions__items production wow animate__animated animate__fadeInUp">
+          <div class="production__row">
+            <div class="production__column">
+              <div class="production__back-first"></div>
+              <div class="row justify-content-between">
+                <div class="col flex-grow-0">
+                  <a class="production__item-long" onclick="loadForm('production12.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production13.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Колонны
+                    </div>
+                  </a>
+                </div>
+                <div class="col flex-grow-0">
+                  <a class="production__item-min" onclick="loadForm('production7.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production6.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Лестницы и балюстрады
+                    </div>
+                  </a>
+                  <a class="production__item-min production__item-min production__bottom" onclick="loadForm('production6.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production5.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Тактильные плиты
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col flex-grow-0">
+                  <a class="production__item-min" onclick="loadForm('production2.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production2.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Плиты мощения
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom" onclick="loadForm('production3.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production4.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Бордюры
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom" onclick="loadForm('production8.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production8.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Столешницы и подоконники
+                    </div>
+                  </a>
+                </div>
+                <div class="col flex-grow-0">
+                  <a class="production__item-min" onclick="loadForm('production1.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production1.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Облицовочные плиты
+                    </div>
+                  </a>
+                  <a class="production__item-min production__item-min" onclick="loadForm('production5.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production3.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Брусчатка
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom" onclick="loadForm('production11.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production10.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Декоративные изделия
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col flex-grow-0">
+                  <a class="production__item-min" onclick="loadForm('production9.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production7.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Фонтаны и памятники
+                    </div>
+                  </a>
+                  <a class="production__item-min production__bottom" onclick="loadForm('production10.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production9.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text production__text-thin">
+                      Слэбы и заготовки
+                    </div>
+                  </a>
+                </div>
+                <div class="col flex-grow-0">
+                  <a class="production__item-long" onclick="loadForm('production4.html')" data-fancybox data-src="#popup_all">
+                    <img src="img/production12.jpg" alt="">
+                    <div class="production__detail">
+                      <span>Подробнее</span>
+                    </div>
+                    <div class="production__text">
+                      Изделия из известняка
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section advantages advatages2 mobile">
+        <h1 class="section__header"></h1>
+        <div class="advantages__items wow animate__animated animate__fadeInUp">
+          <div class="advantage-items__line"></div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/branch.png" alt="">
+            </div>
+            <div class="advantage-item__text">Два собственных завода в Ленобласти</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/warehouse.png" alt="">
+            </div>
+            <div class="advantage-item__text">Объем производства более 8 000 м²<br/>в месяц</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-item__icon-wrapper">
+              <img class="advantage-item__icon" src="img/conveyor.png" alt="">
+            </div>
+            <div class="advantage-item__text">Новое итальянское оборудование</div>
+          </div>
+        <div/>
       </section>
 
       <section id="catalog" class="section catalog">
@@ -507,13 +732,13 @@
         </div>
       </section>
 
-      <section class="section scheme">
+      <section class="section scheme desktop">
         <h1 class="section__header scheme__header wow animate__animated animate__fadeInUp">Схема сотрудничества</h1>
         <img src="img/scheme.png" alt="" class="scheme__img wow animate__animated animate__fadeInUp">
         <button class="scheme__button blue-button" data-toggle="modal" data-target="#modal-calc">Расчет стоимости</button>
       </section>
 
-      <section id="production" class="section production">
+      <section id="production" class="section production desktop">
         <h1 class="section__header production__header wow animate__animated animate__fadeInUp">Производство</h1>
 
         <div class="production__wrapper">
@@ -544,7 +769,36 @@
 
       </section>
 
-      <section class="section certificates">
+      <section id="production2" class="section production mobile">
+        <h1 class="section__header production__header wow animate__animated animate__fadeInUp">Производство</h1>
+
+        <div class="production__wrapper">
+          <div class="production__gallery mb-5 wow animate__animated animate__fadeInUp">
+            <div>
+              <img src="img/galleryMobile1.jpg" alt="" />
+              <span>Производственная база и склады компании</span>
+            </div>
+            <div>
+              <img src="img/galleryMobile2.jpg" alt="" />
+              <span>Производственная база и склады компании</span>
+            </div>
+            <div>
+              <img src="img/galleryMobile3.jpg" alt="" />
+              <span>Производственная база и склады компании</span>
+            </div>
+            <div>
+              <img src="img/galleryMobile4.jpg" alt="" />
+              <span>Производственная база и склады компании</span>
+            </div>
+          </div>
+          <div class="production__desc">
+            Производственная Компания "ПетроМрамор" успешно работает на рынке изделий из натурального камня с 2002 года и является одним из ведущих предприятий отрасли. Два собственных завода, оснащенных современным итальянским оборудованием, выпускают ежемесячно более 8 000 кв.м. высококачественных изделий из гранита и мрамора различной сложности.
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section certificates desktop">
         <h1 class="section__header certificates__header wow animate__animated animate__fadeInUp">Сертификаты</h1>
         <div class="certificates__subtitle wow animate__animated animate__fadeInUp">Вся продукция имеет нужные сертификаты</div>
 
@@ -576,7 +830,7 @@
         </div>
       </section>
 
-      <section class="section clients">
+      <section id="clients" class="section clients">
         <h1 class="section__header clients__header wow animate__animated animate__fadeInUp">Нас выбирают</h1>
 
         <div class="clients_images wow animate__animated animate__fadeInUp">
@@ -595,7 +849,7 @@
           </div>
         </div>
     
-        <div class="clients_request">Отправьте заявку на расчет<br/>стоимости вашего проекта</div>
+        <div id="calc-header" class="clients_request">Отправьте заявку на расчет<br/>стоимости вашего проекта</div>
 
         <form class="calc-form mt-5 wow animate__animated animate__fadeInUp" onsubmit="return false">
           <div class="calc-form__question">
@@ -628,7 +882,7 @@
           <div class="calc-form__third-row">
             <button class="calc-form__send-button blue-button" onclick="calcRequest(2)">Отправить</button>
           </div>
-          <div class="calc-form__forth-row">
+          <div class="calc-form__forth-row desktop">
             <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
@@ -639,6 +893,16 @@
                 <span>Заказать звонок</span>
               </button>
             </div>
+          </div>
+          <div class="mobile">
+            <a class="menu__tel-button blue-button" href="tel:79992217000">
+              <img src="img/phoneRound.png" alt="">
+              <span>+7 (999) 221-70-00</span>
+            </a>
+            <a class="menu__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+              <img src="img/whatsapp.png" alt="">
+              <span>Написать в WhatsApp</span>
+            </a>
           </div>
         </form>
       </section>
@@ -719,10 +983,11 @@
 
     <!-- Окно заказа расчета стоимости -->
     <div id="modal-calc" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered calc-modal">
+      <div class="modal-dialog modal-dialog-centered block-mobile calc-modal">
         <div class="modal-content">
           <button class="close-button"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
           <form class="calc-form" onsubmit="return false">
+            <div class="calc-form__title mobile">Запрос цены</div>
             <div class="calc-form__question">
               <label class="calc-form__question-label">Ваш вопрос:</label>
               <textarea id="calc-question3" class="calc-form__question-textarea form-control" placeholder="Ваш вопрос..."></textarea>
@@ -753,7 +1018,7 @@
             <div class="calc-form__third-row">
               <button class="calc-form__send-button blue-button" onclick="calcRequest(3)">Отправить</button>
             </div>
-            <div class="calc-form__forth-row">
+            <div class="calc-form__forth-row desktop">
               <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
                 <img src="img/whatsapp.png" alt="">
                 <span>Написать в WhatsApp</span>

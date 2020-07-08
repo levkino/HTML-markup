@@ -1,17 +1,12 @@
 const mailRecipient = 'ruslan@petromramor.ru';
-// const mailRecipient = 'olevkino@gmail.com';
 
-// const menu = document.querySelector('.menu');
-// const burger = document.querySelector('.burger');
-// burger.addEventListener('click', function() {
-//   this.classList.toggle('active');
-//   menu.classList.toggle('active');
-//   document.body.classList.toggle('lock');  
-// });
-
-// $('.box').click(function(){
-//     $(this).addClass('fileFocus');
-// });
+const menu = document.querySelector('.menu');
+const burger = document.querySelector('.burger');
+burger.addEventListener('click', function() {
+  this.classList.toggle('active');
+  menu.classList.toggle('active');
+  document.body.classList.toggle('lock');  
+});
 
 $(document).ready(function() {
   // Инициализация wow-появлений
@@ -80,7 +75,7 @@ $(document).ready(function() {
     centerPadding: '1px',
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [{ breakpoint: 651, settings: { slidesToShow: 3 }}]
+    responsive: [{ breakpoint: 767, settings: { slidesToShow: 2 }}]
   });
   $(".production__gallery").slick({ dots: true });
 });
@@ -92,7 +87,9 @@ function scrollToHash(selector) {
 
 $('a[href*="#"]').on('click', function(e) {
   if (this.hash.length > 3) {
-    if (this.className.includes('menu')) {
+    if (this.className === 'menu__item') {
+      burger.click();
+    } else if (this.className.includes('menu')) {
       const activeClass = 'header__menu-item-active';
       $('.' + activeClass).toggleClass(activeClass);
       this.classList.toggle(activeClass);
@@ -226,4 +223,9 @@ function loadForm2(fileName) {
     }
   };
   xhr.send(JSON.stringify({ fileName }));
+}
+
+function goToCalcForm() {
+  $.fancybox.close();
+  scrollToHash('#calc-header');
 }
