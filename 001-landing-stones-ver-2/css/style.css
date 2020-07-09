@@ -1845,7 +1845,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  width: 230px;
+  width: 242px;
   height: 41px !important;
   white-space: nowrap;
 }
@@ -1868,6 +1868,9 @@ input[type="text"]::placeholder, textarea::placeholder {
 }
 .menu__tel-button:hover {
   color: #fff;
+}
+.menu__tel-button span {
+  margin-right: 7px;
 }
 .menu__whatsapp-button {
   background-color: #00b058;
@@ -2376,7 +2379,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   .map {
     margin-top: -209px;
     margin-bottom: -120px;
-    height: 900px;
+    height: 920px;
   }
   .map:after {
     display: none;
@@ -2537,7 +2540,7 @@ input[type="text"]::placeholder, textarea::placeholder {
     box-shadow: 3px 3px 10px 3px #9a9a9a;
   }
   .popupWrapper h3 {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   .popupButtonsWrapper a {
@@ -2609,5 +2612,67 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .popupWrapper .productionGallery .slick-dots {
     bottom: 69px;
+  }
+
+  .popupBack2 {
+    width: 100%;
+    background: url(../img/popup-border.jpg) 0 -4px no-repeat;
+    background-size: 100% calc(100% + 4px);
+    padding: 29px 0 0 0;
+    border-radius: 8px;
+  }
+  .popupBack2::after {
+    height: 35px;
+  }
+  .popupWrapper2 .catGallery {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .popupWrapper2 .catGallery img {
+    width: 100%;
+    height: auto;
+  }
+  .popupWrapper2 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .popupText2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px auto 16px auto;
+    padding: 0;
+    width: 80%;
+    font-size: 12px;
+  }
+  .popupText2 p {
+    padding: 0;
+  }
+  .popupMainText2 {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 10.8px;
+  }
+  .popupWrapper2 .catGallery .slick-prev {
+    left: -19px !important;
+  }
+  .popupWrapper2 .catGallery .slick-next {
+    right: -19px !important;
+  }
+  .popupWrapper2 .catGallery .slick-dots {
+    bottom: 69px;
+  }
+  .popupWrapper2 .catGallery2 {
+    display: none;
+  }
+  .popupQualities2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12.5px;
+    line-height: 20px;
+  }
+  .popupQualities2:nth-child(2) {
+    width: 100%;
   }
 }
