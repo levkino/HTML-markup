@@ -2378,11 +2378,14 @@ input[type="text"]::placeholder, textarea::placeholder {
   
   .map {
     margin-top: -209px;
-    margin-bottom: -120px;
-    height: 920px;
+    height: 807px;
   }
   .map:after {
     display: none;
+  }
+  .map > ymaps {
+    flex: 0 0 439px;
+    height: 439px !important;
   }
   .map__title {
     font-size: 26px;
@@ -2396,9 +2399,10 @@ input[type="text"]::placeholder, textarea::placeholder {
     margin-bottom: 16px;
   }
   .map__contacts {
+    flex: 0 0 430px;
     position: inherit;
     width: 100vw;
-    height: 78%;
+    height: 430px;
     right: 0;
     background-color: #384257;
   }
