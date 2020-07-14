@@ -1,5 +1,6 @@
 const mailRecipient = 'ruslan@petromramor.ru';
 
+const isMobile = $(document).width() < 768;
 const menu = document.querySelector('.menu');
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', function() {
@@ -78,10 +79,22 @@ $(document).ready(function() {
     responsive: [{ breakpoint: 767, settings: { slidesToShow: 2 }}]
   });
   $(".production__gallery").slick({ dots: true });
+
+  // Мобильная версия
+  if (isMobile) {
+    $('a[href^="https://wa.me/79992217000"]').attr('href', 'whatsapp://send?phone=79992217000')
+  }
 });
 
 function scrollToHash(selector) {
-  const top = $(selector).offset().top;
+  let top = $(selector).offset().top;
+  if (isMobile) {
+    top -= 50;
+    if (selector === '#calc-header')
+      top -= 20;
+    if (selector === '#map')
+      top = $(document).height();
+  }
   $('html, body').animate({ scrollTop: top }, 500);
 }
 

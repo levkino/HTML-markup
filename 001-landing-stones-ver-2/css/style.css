@@ -1087,6 +1087,11 @@ body {
   height: 20px;
   background: linear-gradient(0deg, transparent 0%, rgb(85, 85, 85, 0.5) 100%);
 }
+.map > div {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
 .map__contacts {
   position: absolute;
   top: 0;
@@ -1098,7 +1103,7 @@ body {
   height: 100%;
   padding-top: 30px;
   background: rgba(63, 89, 134, 0.9);
-  width: 360px;
+  width: 360px !important;
   color: #fff;
   line-height: 22px;
   font-size: 1.3rem;
@@ -1993,7 +1998,7 @@ input[type="text"]::placeholder, textarea::placeholder {
     margin-bottom: 0;
   }
   .productions .section__header {
-    margin-top: -8px !important;
+    margin-top: 2px !important;
   }
   .productions__items {
     padding-top: 6px !important;
@@ -2353,6 +2358,10 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .calc-form__email, .calc-form__phone {
     margin-left: 0;
+    margin-top: 10px;
+  }
+  .calc-form__file-close-img {
+    top: 11px;
   }
   .calc-form__agree-link {
     display: block;
@@ -2378,10 +2387,13 @@ input[type="text"]::placeholder, textarea::placeholder {
   
   .map {
     margin-top: -209px;
-    height: 807px;
+    height: 915px;
   }
   .map:after {
     display: none;
+  }
+  .map > div {
+    overflow: visible;
   }
   .map > ymaps {
     flex: 0 0 439px;
@@ -2401,7 +2413,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   .map__contacts {
     flex: 0 0 430px;
     position: inherit;
-    width: 100vw;
+    width: 100vw !important;
     height: 430px;
     right: 0;
     background-color: #384257;
