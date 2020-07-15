@@ -2038,9 +2038,6 @@ input[type="text"]::placeholder, textarea::placeholder {
   .production__column .production__item-min {
     height: 39.8% !important;
   }
-  .production__column .production__item-long {
-    
-  }
   .production__column .production__item-min {
     margin-top: -10%;
   }
@@ -2175,7 +2172,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .production__desc {
     text-indent: 15px;
-    font-size: 1rem;
+    font-size: 13px;
     line-height: 20px;
     margin: 0 auto 20px auto;
     text-align: justify;
@@ -2690,5 +2687,33 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .popupQualities2:nth-child(2) {
     width: 100%;
+  }
+}
+
+
+/* Для мобильных устройств */
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .productions__items {
+    max-width: 390px;
+    max-height: 910px;
+  }
+  .production__column .row {
+    height: 320px;
+  }
+  .stoneBlocks {
+    width: 348px;
+  }
+  .stoneBlocks .slick-slide {
+    margin: 0 12px 0 8px;
+  }
+  .stoneBlock {
+    max-width: 159px;
+    max-height: 135px;
+  }
+  .production__desc {
+    width: 334px;
+  }
+  .production__gallery {
+    width: 334px;
   }
 }
