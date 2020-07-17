@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div id="wrapper" class="wrapper">
 
     <header class="header">
       <div class="header__wrapper">
@@ -95,7 +95,7 @@
         <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ</h1>
         <div class="header__line animate__animated animate__fadeInUp"></div>
         <div class="header__subtitle animate__animated animate__fadeInUp">с 2002 года</div>
-        <div class="header__calculate blue-button animate__animated animate__fadeInUp" data-toggle="modal" data-target="#modal-calc">Рассчитать стоимость</div>
+        <a class="header__calculate blue-button animate__animated animate__fadeInUp" href="#calc-header">Рассчитать стоимость</a>
         <a class="header__arrow animate__animated animate__fadeInUp" href="#map"></a>
       </div>
     </header>
@@ -916,6 +916,7 @@
         </div>
         
         <div class="map__contacts">
+          <a class="map__contacts-arrow header__arrow mobile" href="#wrapper"></a>
           <div class="map__title">Выставочный зал</div>
           <img src="img/logo.png" alt="" class="map__logo">
           <div class="map__address">

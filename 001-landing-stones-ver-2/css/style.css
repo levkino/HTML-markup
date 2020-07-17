@@ -1937,6 +1937,9 @@ input[type="text"]::placeholder, textarea::placeholder {
     width: auto;
     max-height: 39px;
   }
+  .header__calculate:active, .header__calculate:hover {
+    color: #fff;
+  }
   .header__arrow {
     left: calc(50% - 18px);
     bottom: -20px;
@@ -2399,6 +2402,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   .map__title {
     font-size: 26px;
     margin-left: 6px;
+    margin-top: 10px;
   }
   .map__logo {
     width: 255px;
@@ -2409,11 +2413,16 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .map__contacts {
     flex: 0 0 430px;
-    position: inherit;
+    position: relative;
     width: 100vw !important;
     height: 430px;
     right: 0;
     background-color: #384257;
+  }
+  .map__contacts-arrow {
+    position: absolute;
+    top: -15px;
+    transform: rotate(180deg);
   }
   .map__phone-title {
     font-size: 22px;
