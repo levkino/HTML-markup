@@ -1,6 +1,7 @@
 const mailRecipient = 'ruslan@petromramor.ru';
 
 const isMobile = $(document).width() < 768;
+let firstScroll = false;
 const menu = document.querySelector('.menu');
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', function() {
@@ -242,3 +243,42 @@ function goToCalcForm() {
   $.fancybox.close();
   scrollToHash('#calc-header');
 }
+
+$(window).scroll(function() {
+  if (firstScroll)
+    return;
+
+  firstScroll = true;
+
+  // Отложенная инициализация карты Яндекса (в целях оптимизации скорости закгрузки сайта)
+  $('#map-desktop').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abac6de18cbf1c42aed54748ed623618b2a65037d74488ad02cbc37c110d1d8e2&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>');
+  $('#map-mobile').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abac6de18cbf1c42aed54748ed623618b2a65037d74488ad02cbc37c110d1d8e2&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>');
+  /// Отложенная инициализация аналитики
+  // $.getScript("js/analytics.js");
+
+  // /// Отложенная инициализация youtube ролика системы лояльности
+  // $("#youtube-div").append('<iframe width="560" height="315" style="margin:0 50px" src="https://www.youtube.com/embed/QN7j3kGyfjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+
+  // /// Отложенная инициализация свайпера
+  // $("head").append("<link rel='stylesheet' type='text/css' href='css/swiper.css' />");
+  // $.getScript("js/swiper.js");
+
+  // /// Отложенная инициализация контролок jquery
+  // $("head").append("<link rel='stylesheet' type='text/css' href='css/jquery_ui.css' />");
+  // $.getScript("js/jquery_ui.js");
+
+  // /// Отложенная инициализация некоторых больших функций
+  // $.getScript("js/others.js");
+
+  // if (isMobile)
+  //   return;
+
+  // if (window.location.href.includes('127.0.0.1'))
+  //   return;
+
+  // /// Подгружаем vk чат только при первом скроллинге
+  // $.getScript("https://vk.com/js/api/openapi.js?161", function() {
+  //   VK.init({apiId: 3970684, onlyWidgets: true});
+  //   VK.Widgets.CommunityMessages("vk_community_messages", 27595439, {disableButtonTooltip:1});
+  // });
+});
