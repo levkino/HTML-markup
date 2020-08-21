@@ -2726,3 +2726,10 @@ input[type="text"]::placeholder, textarea::placeholder {
     width: 334px;
   }
 }
+
+
+/**************************************************************/
+/*  Нижеуказанные 2 строчки после наполнения контента удалить */
+/**************************************************************/
+.productions__items { pointer-events: none; }
+.stoneBlock { pointer-events: none; }
