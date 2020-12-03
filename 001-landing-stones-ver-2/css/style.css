@@ -992,7 +992,7 @@ body {
   width: 1040px;
 }
 .certificates__items a {
-  margin-left: -20px;
+  margin-left: -24px;
   height: 287px;
 }
 .certificates__item {
@@ -1221,6 +1221,10 @@ body {
 
 .fancybox-button {
   background: none;
+}
+
+.fancybox-button:focus {
+  outline: none;
 }
 
 .close-button {
@@ -2130,12 +2134,14 @@ input[type="text"]::placeholder, textarea::placeholder {
     width: 100%;
   }
   .stoneText div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     width: auto;
     height: 57px;
     line-height: 20px;
-    padding: 12px 10px 0 10px;
+    padding: 8px 2px 0 2px;
     margin: 0 auto;
   }
   .slick-arrow {
@@ -2183,6 +2189,7 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .production__gallery {
     width: 304px;
+    height: 260px;
     margin: 0 auto;
     margin-bottom: 10px !important;
   }
@@ -2724,12 +2731,26 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .production__gallery {
     width: 334px;
+	height: 282px;
   }
 }
 
 
+/* Для телефонов */
+@media screen and (max-width: 500px) {
+  .productions {
+    background: url(../img/backgroundRockMobile-min.jpg) 50% 0 no-repeat;
+  }
+  .certificates {
+    background: none;
+  }
+  .clients {
+    background: white url(../img/ourClientsBackgroundMobile-min.jpg) 50% 75px no-repeat;
+  }
+}
+
 /**************************************************************/
 /*  Нижеуказанные 2 строчки после наполнения контента удалить */
 /**************************************************************/
-.productions__items { pointer-events: none; }
-.stoneBlock { pointer-events: none; }
+/*.productions__items { pointer-events: none; }
+.stoneBlock { pointer-events: none; }*/

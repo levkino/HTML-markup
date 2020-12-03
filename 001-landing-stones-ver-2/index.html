@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ПетроМрамор - обработка камня с 2002 года</title>
+  <link rel="icon" href="/pm_logo-t.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="libs/animate/animate.css">
@@ -24,8 +25,8 @@
             <div class="header__address contact-card">
               <img src="img/geo.png" alt="" class="contact-card__img header__address-img">
               <div class="contact-card__text">
-                г. Санкт-Петербург,<br/>
-                Большой просп. В.О., 80,<br/>
+                г. Санкт-Петербург,<br>
+                Большой просп. В.О., 80,<br>
                 БЦ "Сенатор"
               </div>
             </div>
@@ -33,25 +34,25 @@
               <img src="img/clock.png" alt="" class="contact-card__img header__schedule-img">
               <div class="header__schedule-text contact-card__text">
                 <span>Пн-Пт 9:00  -  18:00</span>
-                <a class="white-link d-inline-block mt-1" href="tel:78123220940">+7 (812) 322-09-40</a><br/>
-                <a class="white-link" href="tel:78123223440">+7 (812) 322-34-40</a>
+                <a class="white-link d-inline-block mt-1" href="tel:+78123220940">+7 (812) 322-09-40</a><br>
+                <a class="white-link" href="tel:+78123223440">+7 (812) 322-34-40</a>
               </div>
             </div>
             <div class="header__phone contact-card">
               <img src="img/phoneWhite.png" alt="" class="contact-card__img">
               <div class="contact-card__text">
-                <a class="white-link contact-card__main-phone" href="tel:79992217000">+7 (999) 221-70-00</a><br/>
-                <a class="white-link contact-card__email d-inline-block" href="mailto:stones@petromramor.ru">stones@petromramor.ru</a>
+                <a class="white-link contact-card__main-phone" href="tel:+79992217000">+7 (999) 221-70-00</a><br>
+                <a class="white-link contact-card__email d-inline-block" href="mailto:stones@petromramor.com">stones@petromramor.com</a>
               </div>
             </div>
             <div class="header__call blue-button" data-toggle="modal" data-target="#modal-call">Заказать звонок</div>
           </div>
         </div>
         <div class="header__menu white-link">
-          <a class="header__menu-item" href="#productions">Изделия</a>
-          <a class="header__menu-item" href="#catalog">Каталог камня</a>
-          <a class="header__menu-item" href="#production">Производство</a>
-          <a class="header__menu-item" href="#map">Контакты</a>
+          <a class="header__menu-item" href="#productions">ИЗДЕЛИЯ</a>
+          <a class="header__menu-item" href="#catalog">КАТАЛОГ КАМНЯ</a>
+          <a class="header__menu-item" href="#production">ПРОИЗВОДСТВО</a>
+          <a class="header__menu-item" href="#map">КОНТАКТЫ</a>
         </div>
         <h1 class="header__title animate__animated animate__fadeInDown">ПРОИЗВОДСТВО ИЗДЕЛИЙ ИЗ ПРИРОДНОГО КАМНЯ ДЛЯ СТРОИТЕЛЬСТВА И ОТДЕЛКИ</h1>
         <div class="header__line animate__animated animate__fadeInUp"></div>
@@ -81,11 +82,11 @@
           </div>
           <div class="line"></div>
           <div>
-            <a class="menu__tel-button blue-button" href="tel:79992217000">
+            <a class="menu__tel-button blue-button" href="tel:+79992217000">
               <img src="img/phoneRound.png" alt="">
               <span>+7 (999) 221-70-00</span>
             </a>
-            <a class="menu__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+            <a class="menu__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -102,67 +103,67 @@
 
     <main>
       <section id="advantages" class="section advantages desktop">
-        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">Наши преимущества</h1>
+        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">С Сентября 2020 - Скидки до 30% !!!</h1>
         <div class="advantages__items wow animate__animated animate__fadeInUp">
           <div class="advantage-items__line"></div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/branch.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/branch.png" alt="">
             </div>
             <div class="advantage-item__text">Два собственных завода в Ленобласти</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/conveyor.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/conveyor.png" alt="">
             </div>
             <div class="advantage-item__text">Новое итальянское оборудование</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_quality" src="img/document.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_quality lazy" data-src="img/document.png" alt="">
             </div>
             <div class="advantage-item__text">Качество соответствует ГОСТ</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_dev" src="img/individual.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_dev lazy" data-src="img/individual.png" alt="">
             </div>
             <div class="advantage-item__text">Разработка индивидуальных проектов</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/warehouse.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/warehouse.png" alt="">
             </div>
             <div class="advantage-item__text">Объем производства более 8 000 м² в месяц</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_car" src="img/truck.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_car lazy" data-src="img/truck.png" alt="">
             </div>
-            <div class="advantage-item__text">Доставка<br/>по всей России</div>
+            <div class="advantage-item__text">Доставка<br>по всей России</div>
           </div>
         <div/>
       </section>
 
       <section class="section advantages mobile">
-        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">Ваша выгода</h1>
+        <h1 class="section__header mt-5 wow animate__animated animate__fadeInUp">С Сентября 2020 - Скидки до 30% !!!</h1>
         <div class="advantages__items wow animate__animated animate__fadeInUp">
           <div class="advantage-items__line"></div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_dev" src="img/individual.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_dev lazy" data-src="img/individual.png" alt="">
             </div>
             <div class="advantage-item__text">Разработка индивидуальных проектов</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_car" src="img/truck.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_car lazy" data-src="img/truck.png" alt="">
             </div>
-            <div class="advantage-item__text">Доставка<br/>по всей<br/>России</div>
+            <div class="advantage-item__text">Доставка<br>по всей<br>России</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon advantage-item__icon_quality" src="img/document.png" alt="">
+              <img class="advantage-item__icon advantage-item__icon_quality lazy" data-src="img/document.png" alt="">
             </div>
             <div class="advantage-item__text">Качество соответствует ГОСТ</div>
           </div>
@@ -176,7 +177,7 @@
             <div class="production__column production__shadow-first">
               <div class="production__back-first"></div>
               <a class="production__item-big" onclick="loadForm('production1.html')" data-fancybox data-src="#popup_all">
-                <img src="img/production1.jpg" alt="">
+                <img class="lazy" data-src="img/production1.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
                 </div>
@@ -190,7 +191,7 @@
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production2.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production2.jpg" alt="">
+                    <img class="lazy" data-src="img/production2.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -199,7 +200,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production3.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production4.jpg" alt="">
+                    <img class="lazy" data-src="img/production4.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -210,7 +211,7 @@
                 </div>
                 <div class="col flex-grow-0">
                   <a class="production__item-long" onclick="loadForm('production4.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production12.jpg" alt="">
+                    <img class="lazy" data-src="img/production12.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -224,7 +225,7 @@
             <div class="production__column production__last-column">
               <div class="production__back-third"></div>
               <a class="production__item-min production__item-min" onclick="loadForm('production5.html')" data-fancybox data-src="#popup_all">
-                <img src="img/production3.jpg" alt="">
+                <img class="lazy" data-src="img/production3.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
                 </div>
@@ -233,7 +234,7 @@
                 </div>
               </a>
               <a class="production__item-min production__item-min production__bottom" onclick="loadForm('production6.html')" data-fancybox data-src="#popup_all">
-                <img src="img/production5.jpg" alt="">
+                <img class="lazy" data-src="img/production5.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
                 </div>
@@ -249,7 +250,7 @@
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production7.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production6.jpg" alt="">
+                    <img class="lazy" data-src="img/production6.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -258,7 +259,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production8.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production8.jpg" alt="">
+                    <img class="lazy" data-src="img/production8.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -269,7 +270,7 @@
                 </div>
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production9.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production7.jpg" alt="">
+                    <img class="lazy" data-src="img/production7.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -278,7 +279,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production10.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production9.jpg" alt="">
+                    <img class="lazy" data-src="img/production9.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -292,7 +293,7 @@
             <div class="production__column">
               <div class="production__back-firth"></div>
               <a class="production__item-big" onclick="loadForm('production11.html')" data-fancybox data-src="#popup_all">
-                <img src="img/production10.jpg" alt="">
+                <img class="lazy" data-src="img/production10.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
                 </div>
@@ -304,7 +305,7 @@
             <div class="production__column production__last-column">
               <div class="production__back-six"></div>
               <a class="production__item-long" onclick="loadForm('production12.html')" data-fancybox data-src="#popup_all">
-                <img src="img/production13.jpg" alt="">
+                <img class="lazy" data-src="img/production13.jpg" alt="">
                 <div class="production__detail">
                   <span>Подробнее</span>
                 </div>
@@ -349,7 +350,7 @@
             <button class="calc-form__send-button blue-button" onclick="calcRequest(1)">Отправить</button>
           </div>
           <div class="calc-form__forth-row">
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+            <a class="calc-form__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -393,7 +394,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__item-min production__bottom" onclick="loadForm('production6.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production5.jpg" alt="">
+                    <img class="lazy" data-src="img/production5.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -406,7 +407,7 @@
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production2.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production2.jpg" alt="">
+                    <img class="lazy" data-src="img/production2.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -415,7 +416,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production3.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production4.jpg" alt="">
+                    <img class="lazy" data-src="img/production4.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -424,7 +425,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production8.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production8.jpg" alt="">
+                    <img class="lazy" data-src="img/production8.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -435,7 +436,7 @@
                 </div>
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production1.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production1.jpg" alt="">
+                    <img class="lazy" data-src="img/production1.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -444,7 +445,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__item-min" onclick="loadForm('production5.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production3.jpg" alt="">
+                    <img class="lazy" data-src="img/production3.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -453,7 +454,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production11.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production10.jpg" alt="">
+                    <img class="lazy" data-src="img/production10.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -466,7 +467,7 @@
               <div class="row justify-content-between">
                 <div class="col flex-grow-0">
                   <a class="production__item-min" onclick="loadForm('production9.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production7.jpg" alt="">
+                    <img class="lazy" data-src="img/production7.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -475,7 +476,7 @@
                     </div>
                   </a>
                   <a class="production__item-min production__bottom" onclick="loadForm('production10.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production9.jpg" alt="">
+                    <img class="lazy" data-src="img/production9.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -486,7 +487,7 @@
                 </div>
                 <div class="col flex-grow-0">
                   <a class="production__item-long" onclick="loadForm('production4.html')" data-fancybox data-src="#popup_all">
-                    <img src="img/production12.jpg" alt="">
+                    <img class="lazy" data-src="img/production12.jpg" alt="">
                     <div class="production__detail">
                       <span>Подробнее</span>
                     </div>
@@ -507,19 +508,19 @@
           <div class="advantage-items__line"></div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/branch.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/branch.png" alt="">
             </div>
             <div class="advantage-item__text">Два собственных завода в Ленобласти</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/warehouse.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/warehouse.png" alt="">
             </div>
-            <div class="advantage-item__text">Объем производства более 8 000 м²<br/>в месяц</div>
+            <div class="advantage-item__text">Объем производства более 8 000 м²<br>в месяц</div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__icon-wrapper">
-              <img class="advantage-item__icon" src="img/conveyor.png" alt="">
+              <img class="advantage-item__icon lazy" data-src="img/conveyor.png" alt="">
             </div>
             <div class="advantage-item__text">Новое итальянское оборудование</div>
           </div>
@@ -542,100 +543,196 @@
       
           <div class="tabs__content active">
             <div class="stoneBlocks">
-              <div class="stoneBlock" onclick="loadForm2('catalog1.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone1.jpg" alt="" />
-                <div class="stoneText">
-                  <div>Ала-Носкуа гранит</div>
-                </div>
-              </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog2.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone2.jpg" alt="" />
-                <div class="stoneText">
-                  <div>Каменногорское гранит</div>
-                </div>
-              </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog3.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone3.jpg" alt="" />
-                <div class="stoneText">
-                  <div>Возрождение гранит</div>
-                </div>
-              </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog4.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone4.jpg" alt="" />
-                <div class="stoneText">
-                  <div>Ладожское гранит</div>
-                </div>
-              </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog5.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone5.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog-dymovskiy.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr1_dyimovskiy_sm-min.jpg" alt="" />
                 <div class="stoneText">
                   <div>Дымовский граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog6.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone6.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog-alanoskua.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr2_alanoskua_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Другорецкое габбро-диабаз</div>
+                  <div>Ала-Носкуа</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog7.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone7.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog-elizovskiy.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr3_elizovskiytermo_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Елизовское граносиенит</div>
+                  <div>Елизовский граносиенит</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog8.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone8.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr4_gran_amfibolit_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Мансуровский гранит</div>
+                  <div>Гранатовый амфиболит</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog9.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone1.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr5_sopka-buntina_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ала-Носкуа гранит</div>
+                  <div>Пироксенит "Сопка Бунтина"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog10.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone2.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr6_baltic_green_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Каменногорское гранит</div>
+                  <div>Балтик Грин</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog11.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone3.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr7_forest_green_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Возрождение гранит</div>
+                  <div>Форест Грин</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog12.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone4.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog-drugoretskoe.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr8_gabbro_drugoretskiy_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ладожское гранит</div>
+                  <div>Габбро-диабаз "Другорецкое"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog13.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone5.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr9_zheltau_red_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Дымовский граносиенит</div>
+                  <div>Жельтау красный</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog14.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone6.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr10_kurty_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Другорецкое <span>габбро-диабаз</span></div>
+                  <div>Куртинский</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog15.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone7.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog-ladozhskiy.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr11_ladojskiy_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Елизовское граносиенит</div>
+                  <div>Ладожский</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog16.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone8.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr12_kurday_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Мансуровский гранит</div>
+                  <div>Курдайский</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr13_carmen_red_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Кармен Ред</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr14_balm_red_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Балморал Ред</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr15_baltic_brown_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Балтик Браун</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr16_eagle_red_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Игл Ред</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr17_hibinit_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Хибинит</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr18_tokimovka_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Гора Токимовка</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr19_kashina_gora_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Кашина Гора</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr20_kuru_grey_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Куру Грей</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog-kamennogorskiy.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr21_kamennogorka_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Каменногорский</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr22_zhalgyz_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Жалгыз</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog-vozrozhdenie.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr23_vozrojdenie_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog-mansurovskiy.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr24_mansurovskiy_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мансуровский</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr25_zheltau_yellow_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Жельтау желтый</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr26_nadezhda_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Надежда</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr27_kapal-arasan_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Капал-Арасан</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr28_zheltau_grey_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Жельтау серый</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr29_kapustinsky_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Капустинский</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr30_letcherechenskiy_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Летнереченский</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr31_surtas_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Суртас</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog-vozrozhdenie.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/gr23_vozrojdenie_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Возрождение</div>
                 </div>
               </div>
             </div>
@@ -643,22 +740,28 @@
       
           <div class="tabs__content">
             <div class="stoneBlocks">
-              <div class="stoneBlock" onclick="loadForm2('catalog17.html')" data-fancybox data-src="#popup_all2" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
-                <img src="img/stone1.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2" data-fancybox data-src="#popup2" href="javascript:;" data-options='{"touch" : false}'>
+                <img class="lazy" data-src="img/izv1_travertin_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ала-Носкуа гранит2</div>
+                  <div>Травертин Казахстанский</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog18.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone2.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/izv2_mr_izv_aquamarin_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Каменногорское гранит2</div>
+                  <div>Известняк мрам. "Аквамарин"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog19.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone3.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/izv3_izvestniak_bezh_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Возрождение гранит2</div>
+                  <div>Известняк мраморизованный</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/izv4_izv-rakushechnik_yuzhniy_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Известняк-ракушечник</div>
                 </div>
               </div>
             </div>
@@ -666,64 +769,124 @@
       
           <div class="tabs__content">
             <div class="stoneBlocks">
-              <div class="stoneBlock" onclick="loadForm2('catalog20.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone1.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr1-blu_pearl_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ала-Носкуа3 гранит</div>
+                  <div>Лабрадорит "Блю Перл"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog21.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone2.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr2-giallo_ornamentale_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Каменногорское3 гранит</div>
+                  <div>Гранит "Жиалло Орнаментале"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog22.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone3.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr3-tan_brown_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Возрождение3 гранит</div>
+                  <div>Гранит "Тан Браун"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog23.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone4.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr4-giallo_vicenza_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ладожское3 гранит</div>
+                  <div>Гранит "Жиалло Виченца"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog24.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone5.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr5-golovinsky_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Дымовский3 граносиенит</div>
+                  <div>Головинский лабрадорит</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog25.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone6.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr6-giallo_veneziano_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Другорецкое3 габбро-диабаз</div>
+                  <div>Гранит "Жиалло Венециано"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog26.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone7.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr1-arabescato_orobico_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Елизовское3 граносиенит</div>
+                  <div>"Арабескато Оробико" Мрамор</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog27.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone8.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr2-bianca_carrara_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Мансуровский3 гранит</div>
+                  <div>Мрамор "Бьянка Каррара"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog28.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone1.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr3-breccia_sardo_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Ала-Носкуа 3гранит</div>
+                  <div>Мрамор "Бречиа Сардо"</div>
                 </div>
               </div>
-              <div class="stoneBlock" onclick="loadForm2('catalog29.html')" data-fancybox data-src="#popup_all2">
-                <img src="img/stone2.jpg" alt="" />
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr4-rosso_verona_sm-min.jpg" alt="" />
                 <div class="stoneText">
-                  <div>Каменногорское 3гранит</div>
+                  <div>Мрамор "Россо Верона"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr5-crema_marfil_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Крема Марфил"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr6-crema_valencia_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Крема Валенсия"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr7-bidasar_green_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Бидасар Грин"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr8-bidasar_brown_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Бидасар Браун"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr9-imperador_dark_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Имперадор Дарк"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr10-rosso_levanto10_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Россо Леванто"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-mr11-light-emperador_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Мрамор "Имперадор Лайт"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr10-atlantica-cream_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Гранит "Атлантика Крим"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr7-golden_flakes_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Гранит "Голден Флейкс"</div>
+                </div>
+              </div>
+              <div class="stoneBlock" onclick="loadForm2('catalog9-na_vsex.html')" data-fancybox data-src="#popup_all2">
+                <img class="lazy" data-src="img/imp-gr8-golden_chocolate_sm-min.jpg" alt="" />
+                <div class="stoneText">
+                  <div>Гранит "Голден Шоколад"</div>
                 </div>
               </div>
             </div>
@@ -734,7 +897,7 @@
 
       <section class="section scheme desktop">
         <h1 class="section__header scheme__header wow animate__animated animate__fadeInUp">Схема сотрудничества</h1>
-        <img src="img/scheme.png" alt="" class="scheme__img wow animate__animated animate__fadeInUp">
+        <img data-src="img/scheme.png" alt="" class="scheme__img wow animate__animated animate__fadeInUp lazy">
         <button class="scheme__button blue-button" data-toggle="modal" data-target="#modal-calc">Расчет стоимости</button>
       </section>
 
@@ -744,25 +907,61 @@
         <div class="production__wrapper">
           <div class="production__gallery mb-5 wow animate__animated animate__fadeInUp">
             <div>
-              <img src="img/gallery1.jpg" alt="" />
-              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+              <img class="lazy" data-src="img/prod2-sklad1-min.jpg" alt="" />
+              <span>Производство гранитных модульных пл		ит<br>и плит мощения</span>
             </div>
             <div>
-              <img src="img/gallery2.jpg" alt="" />
-              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+              <img class="lazy" data-src="img/prod8-raspil-min.jpg" alt="" />
+              <span>Распил гранитных блоков месторождений<br>России, Финляндии, Казахстана</span>
             </div>
             <div>
-              <img src="img/gallery3.jpg" alt="" />
-              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+              <img class="lazy" data-src="img/prod1-CNC-min.jpg" alt="" />
+              <span>Фрезеровка фигурных цокольных плит<br>на станках с ЧПУ</span>
             </div>
             <div>
-              <img src="img/gallery4.jpg" alt="" />
-              <span>Распил заготовки на полосы (полуслэбы) на мостовом станке с диаметром диска 2,1 метра</span>
+              <img class="lazy" data-src="img/prod3-uch_raspila-min.jpg" alt="" />
+              <span>Участок распила гранитных блоков<br>на мостовых дисковых станках</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod4-izg_kolonna-min.jpg" alt="" />
+              <span>Изговление тел вращения, гранитных колонн<br>на станках с ЧПУ</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod5-new_gmm-min.jpg" alt="" />
+              <span>Распил гранитных заготовок на станках<br>итальянского производства</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod6-raspil1-min.jpg" alt="" />
+              <span>Фрезеровка малых архитектурных форм<br>на станках с ЧПУ</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod7-kolonny-min.jpg" alt="" />
+              <span>Изготовление колонн из гранита<br>и мрамора</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod9-ruchnaya_polirovka-min.jpg" alt="" />
+              <span>Ручная полировка изделий<br>из натурального камня</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod10-slovorub-min.jpg" alt="" />
+              <span>Художественная резьба по камню,<br>словорубные работы</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod11-sklad3-min.jpg" alt="" />
+              <span>Склад бортовых камней<br>из гранита</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod12-sklad_gp2-min.jpg" alt="" />
+              <span>Изготовление изделий из природного<br>камня любой сложности</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod14-vkz-2-min.jpg" alt="" />
+              <span>Производство и склад изделий<br>из гранита и мрамора</span>
             </div>
           </div>
           <div class="production__desc">
-            Производственная Компания "ПетроМрамор" успешно работает на рынке изделий из натурального камня с 2002 года и является одним из ведущих предприятий отрасли. Два собственных завода выпускают ежемесячно более 8 000 кв.м. высококачественных изделий из гранита и мрамора различной сложности.<br/><br/>
-            На протяжении многих лет самые требовательные и взыскательные заказчики стали нашими постоянными клиентами, доверяют нам выполнение наиболее сложных и ответственных работ, связанных с обработкой натурального камня.<br/><br/>
+            Производственная Компания "ПетроМрамор" успешно работает на рынке изделий из натурального камня с 2002 года и является одним из ведущих предприятий отрасли. Два собственных завода выпускают ежемесячно более 8 000 кв.м. высококачественных изделий из гранита и мрамора различной сложности.<br><br>
+            На протяжении многих лет самые требовательные и взыскательные заказчики стали нашими постоянными клиентами, доверяют нам выполнение наиболее сложных и ответственных работ, связанных с обработкой натурального камня.<br><br>
             Современное итальянское оборудование, квалифицированный персонал и применение передовых технологий обработки природного камня позволяют нам производить изделия из натурального камня любого уровня сложности, в том числе выполнять заказы, связанные с производством больших объемов изделий широкого ассортимента из камня в сжатые сроки для выполнения комплексных поставок.
           </div>
         </div>
@@ -775,20 +974,28 @@
         <div class="production__wrapper">
           <div class="production__gallery mb-5 wow animate__animated animate__fadeInUp">
             <div>
-              <img src="img/galleryMobile1.jpg" alt="" />
-              <span>Производственная база и склады компании</span>
+              <img class="lazy" data-src="img/prod2-sklad1-min-mob.jpg" alt="" />
+              <span>Склад гранитных модульных плит и плит мощения</span>
             </div>
             <div>
-              <img src="img/galleryMobile2.jpg" alt="" />
-              <span>Производственная база и склады компании</span>
+              <img class="lazy" data-src="img/prod1-CNC-min-mob.jpg" alt="" />
+              <span>Фрезеровка фигурных цокольных плит</span>
             </div>
             <div>
-              <img src="img/galleryMobile3.jpg" alt="" />
-              <span>Производственная база и склады компании</span>
+              <img class="lazy" data-src="img/prod4-izg_kolonna-min-mob.jpg" alt="" />
+              <span>Изговление тел вращения на станках с ЧПУ</span>
             </div>
             <div>
-              <img src="img/galleryMobile4.jpg" alt="" />
-              <span>Производственная база и склады компании</span>
+              <img class="lazy" data-src="img/prod6-raspil1-min-mob.jpg" alt="" />
+              <span>Фрезеровка малых архитектурных форм</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod9-ruchnaya_polirovka-min-mob.jpg" alt="" />
+              <span>Ручная полировка изделий из натурального камня</span>
+            </div>
+            <div>
+              <img class="lazy" data-src="img/prod11-sklad3-min-mob.jpg" alt="" />
+              <span>Склад бортовых камней из гранита</span>
             </div>
           </div>
           <div class="production__desc">
@@ -805,25 +1012,25 @@
         <div class="certificates__items mt-3 mb-5 wow animate__animated animate__fadeInUp">
           <div>
             <a class="fancybox-button" href="img/certificate4.jpg">
-              <img src="img/certificate4.jpg" alt="" class="certificates__item"/>
+              <img data-src="img/certificate-mini4.jpg" alt="" class="certificates__item lazy"/>
             </a>
             <span class="certificates__text">Компания "ПетроМрамор" в Торгово-Промышленной палате Санкт-Петербурга</span>
           </div>
           <div>
             <a class="fancybox-button" href="img/certificate1.jpg">
-              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+              <img data-src="img/certificate-mini1.jpg" alt="" class="certificates__item lazy"/>
             </a>
             <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
           </div>
           <div>
             <a class="fancybox-button" href="img/certificate2.jpg">
-              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+              <img data-src="img/certificate-mini2.jpg" alt="" class="certificates__item lazy"/>
             </a>
             <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
           </div>
           <div>
             <a class="fancybox-button" href="img/certificate3.jpg">
-              <img src="img/certificate.jpg" alt="" class="certificates__item"/>
+              <img data-src="img/certificate-mini3.jpg" alt="" class="certificates__item lazy"/>
             </a>
             <span class="certificates__text">Сертификат соответствия качества архитектурно-строительных изделий из природного камня требованиям ГОСТ 23342-2012</span>
           </div>
@@ -835,21 +1042,21 @@
 
         <div class="clients_images wow animate__animated animate__fadeInUp">
           <div>
-            <img class="clients_image" src="img/logo-lukoil.png" width="96" alt="">
-            <img class="clients_image" src="img/logo-lahta.png" width="217" alt="">
-            <img class="clients_image" src="img/logo-mosmetrostroy.png" width="206" alt="">
-            <img class="clients_image" src="img/logo-lenmetro.png" width="126" alt="">
-            <img class="clients_image" src="img/logo-valaam.png" width="95" alt="">
-            <img class="clients_image" src="img/logo-mosmetro.png" width="133" alt="">
+            <img class="clients_image lazy" data-src="img/logo-lukoil.png" width="96" alt="">
+            <img class="clients_image lazy" data-src="img/logo-lahta.png" width="217" alt="">
+            <img class="clients_image lazy" data-src="img/logo-mosmetrostroy.png" width="206" alt="">
+            <img class="clients_image lazy" data-src="img/logo-lenmetro.png" width="126" alt="">
+            <img class="clients_image lazy" data-src="img/logo-valaam.png" width="95" alt="">
+            <img class="clients_image lazy" data-src="img/logo-mosmetro.png" width="133" alt="">
           </div>
           <div>
-            <img class="clients_image_row2" src="img/logo-gasprom.png" width="211" alt="">
-            <img class="clients_image_row2" src="img/logo-gallery.png" width="241" alt="">
-            <img class="clients_image_row2" src="img/logo-lenspecstroy.png" width="312" alt="">
+            <img class="clients_image_row2 lazy" data-src="img/logo-gasprom.png" width="211" alt="">
+            <img class="clients_image_row2 lazy" data-src="img/logo-gallery.png" width="241" alt="">
+            <img class="clients_image_row2 lazy" data-src="img/logo-lenspecstroy.png" width="312" alt="">
           </div>
         </div>
     
-        <div id="calc-header" class="clients_request">Отправьте заявку на расчет<br/>стоимости вашего проекта</div>
+        <div id="calc-header" class="clients_request">Отправьте заявку на расчет<br>стоимости вашего проекта</div>
 
         <form class="calc-form mt-5 wow animate__animated animate__fadeInUp" onsubmit="return false">
           <div class="calc-form__question">
@@ -883,7 +1090,7 @@
             <button class="calc-form__send-button blue-button" onclick="calcRequest(2)">Отправить</button>
           </div>
           <div class="calc-form__forth-row desktop">
-            <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+            <a class="calc-form__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -895,11 +1102,11 @@
             </div>
           </div>
           <div class="mobile">
-            <a class="menu__tel-button blue-button" href="tel:79992217000">
+            <a class="menu__tel-button blue-button" href="tel:+79992217000">
               <img src="img/phoneRound.png" alt="">
               <span>+7 (999) 221-70-00</span>
             </a>
-            <a class="menu__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+            <a class="menu__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -914,27 +1121,27 @@
         <div class="map__contacts">
           <a class="map__contacts-arrow header__arrow mobile" href="#wrapper"></a>
           <div class="map__title">Выставочный зал</div>
-          <img src="img/logo.png" alt="" class="map__logo">
+          <img class="lazy map__logo" data-src="img/logo.png" alt="">
           <div class="map__address">
-            г. Санкт-Петербург,<br/>
-            Большой проспект<br/>
-            Васильевского острова, 80,<br/>
+            г. Санкт-Петербург,<br>
+            Большой проспект<br>
+            Васильевского острова, 80,<br>
             бизнес-центр "Сенатор"</div>
           <div class="map__phones">
             <div class="map__phone-main">
-              <a href="tel:79992217000">
+              <a href="tel:+79992217000">
                 <img src="img/phoneWhite.png" alt="" class="map__phone-icon">
                 <span class="map__phone-title">+7 (999) 221-70-00</span>
               </a>
-              <a href="https://wa.me/79992217000" target="blank">
+              <a href="#" onclick="goWhatsApp(event)">
                 <img src="img/whatsapp.png" alt="" class="map__phone-whatsapp">
               </a>
             </div>
             <div class="map__phone-others">
-              <a href="tel:78123220940">
+              <a href="tel:+78123220940">
                 <span class="map__phone-sub">+7 (812) 322-09-40</span>
               </a>
-              <a href="tel:78123223440">
+              <a href="tel:+78123223440">
                 <span class="map__phone-sub">+7 (812) 322-34-40</span>
               </a>
             </div>
@@ -942,8 +1149,8 @@
               <img src="img/clock.png" class="map__schedule-icon"></img>
               <span>Пн-Пт 9:00 - 18:00</span>
             </div>
-            <a href="mailto:stones@petromramor.ru" class="map__mail">stones@petromramor.ru</a>
-            <span class="map__prev-site">Переход на предыдущую версию сайта</span>
+            <a href="mailto:stones@petromramor.com" class="map__mail">stones@petromramor.com</a>
+            <span class="map__prev-site">Переход на ретро-версию версию сайта</span>
             <a href="https://petromramor.ru" class="map__site" target="blank">www.petromramor.ru</a>
           </div>
         </div>
@@ -974,7 +1181,7 @@
               <img src="img/requestTelephoneOutlineLight.png" alt="">
               <span>Заказать звонок</span>
             </button>
-            <a class="call-form__whatsapp-button calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+            <a class="call-form__whatsapp-button calc-form__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
               <img src="img/whatsapp.png" alt="">
               <span>Написать в WhatsApp</span>
             </a>
@@ -1021,7 +1228,7 @@
               <button class="calc-form__send-button blue-button" onclick="calcRequest(3)">Отправить</button>
             </div>
             <div class="calc-form__forth-row desktop">
-              <a class="calc-form__whatsapp-button blue-button" href="https://wa.me/79992217000" target="blank">
+              <a class="calc-form__whatsapp-button blue-button" href="#" onclick="goWhatsApp(event)">
                 <img src="img/whatsapp.png" alt="">
                 <span>Написать в WhatsApp</span>
               </a>
@@ -1054,7 +1261,7 @@
       <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content thank-you">
           <img src="img/checkMark.png" alt=""/>
-          <h3>Спасибо!<br /> Ваша заявка отправлена!</h3>
+          <h3>Спасибо!<br> Ваша заявка отправлена!</h3>
         </div>
       </div>
     </div>
@@ -1101,10 +1308,22 @@
   <script type="text/javascript" src="libs/jquery/jquery.mask.js"></script>
   <script type="text/javascript" src="libs/jquery/jquery-tabs.js"></script>
   <script type="text/javascript" src="libs/jquery/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery.lazy.min.js"></script>
   <script type="text/javascript" src="libs/slick/slick.min.js"></script>
   <script type="text/javascript" src="libs/wow/wow.min.js"></script>
   <script type="text/javascript" src="libs/bootstrap/popper.min.js"></script>
   <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+<!--  <script type="text/javascript" src="js/yandex_metrica.js"></script>-->
   <script type="text/javascript" src="js/main.js"></script>
+
+<!--  <!-- Global site tag (gtag.js) - Google Analytics-->
+<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-07XNQPBEMC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-07XNQPBEMC');
+  </script>-->
+
 </body>
 </html>
