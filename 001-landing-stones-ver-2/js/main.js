@@ -292,6 +292,6 @@ $(window).scroll(function() {
   }
 
   // Отложенная инициализация карты Яндекса (в целях оптимизации скорости закгрузки сайта)
-  $('#map-desktop').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abac6de18cbf1c42aed54748ed623618b2a65037d74488ad02cbc37c110d1d8e2&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>');
-  $('#map-mobile').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abac6de18cbf1c42aed54748ed623618b2a65037d74488ad02cbc37c110d1d8e2&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>');
+  $('#map-desktop').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AHUsyaM9-ZE4SFb1Iv5o2Z3MniA66G2kX&amp;width=95%&amp;width=100%&height=670&amp;lang=ru_RU&amp;scroll=true"></script>');
+  $('#map-mobile').append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AHUsyaM9-ZE4SFb1Iv5o2Z3MniA66G2kX&amp;width=95%&amp;width=100%&height=550&amp;lang=ru_RU&amp;scroll=true"></script>');
 });
