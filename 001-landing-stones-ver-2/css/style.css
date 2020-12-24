@@ -24,6 +24,10 @@ body {
   overflow-y: scroll !important;
 }
 
+body > ymaps {
+  display: none !important;
+}
+
 .modal {
   padding-left: 21px;
 }
@@ -1741,8 +1745,30 @@ input[type="text"]::placeholder, textarea::placeholder {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.storage__map { }
-.storage__desc { 
+.storage__map-wrapper { 
+  position: relative;
+}
+.storage__map { 
+  height: 400px;
+}
+.storage__map-navigate {
+  position: absolute;
+  top: 10px;
+  left: 48px;
+  height: 28px;
+  line-height: 2;
+  padding: 0 12px;
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.15), 0 2px 5px -3px rgba(0,0,0,.15);
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.storage__map-navigate:hover {
+  color: #000;
+}
+.storage__desc {
+  margin-top: 8px; 
   font-size: 14px;
   color: #414141;
   line-height: 20px;
@@ -2767,6 +2793,9 @@ input[type="text"]::placeholder, textarea::placeholder {
   }
   .popupQualities2:nth-child(2) {
     width: 100%;
+  }
+  .storage {
+    margin-bottom: 0;
   }
   .storage__title { 
     font-size: 16px;
