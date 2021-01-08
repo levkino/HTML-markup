@@ -92,7 +92,7 @@ function callRequest(phoneInput) {
   };
   xhr.send(JSON.stringify(data));
   ym(68261236,'reachGoal','foszakazalizvonok');
-  gtag('event', 'conversion', {'send_to': 'AW-530386407/etAHCIKLou0BEOeb9PwB'});
+  gtag('event', 'foszv');
   return false;
 }
 
@@ -136,7 +136,7 @@ function calcRequest(formNumber, isCallRequest) {
   };
   xhr.send(formData);
   ym(68261236,'reachGoal','fosraschitat');
-  gtag('event', 'conversion', { 'send_to': 'AW-530386407/4cCeCKnSsu0BEOeb9PwB', 'value': 300.0, 'currency': 'RUB' });
+  gtag('event', 'fosprise');
   return false;
 }
 
@@ -198,21 +198,21 @@ function goWhatsApp(e) {
   window.open('https://wa.me/+79992217000', '_blank');
   e.preventDefault();
   ym(68261236,'reachGoal','whatsapp');
-  gtag('event', 'conversion', { 'send_to': 'AW-530386407/C1yxCNv1su0BEOeb9PwB' });
+  gtag('event', 'whatsapp');
 }
 
 function addLinkGoals() {
   $("a[href='mailto:stones@petromramor.com']").click(function(e) {
-    gtag('event', 'conversion', { 'send_to': 'AW-530386407/nNEtCNrxsu0BEOeb9PwB' });
+    gtag('event', 'email');
   });
   $("a[href='tel:+78123220940']").click(function(e) {
-    gtag('config', 'AW-530386407/A9F0CNLdsu0BEOeb9PwB', { 'phone_conversion_number': '+78123220940' });
+    gtag('event', 'call7812322-09-40');
   });
   $("a[href='tel:+78123223440']").click(function(e) {
-    gtag('config', 'AW-530386407/-ApICPKOkO0BEOeb9PwB', { 'phone_conversion_number': '+78123223440' });
+    gtag('event', 'call78123223440');
   });
   $("a[href='tel:+79992217000']").click(function(e) {
-    gtag('config', 'AW-530386407/JJY2CLrssu0BEOeb9PwB', { 'phone_conversion_number': '+79992217000' });
+    gtag('event', 'call79992217000');
   });
 }
 
