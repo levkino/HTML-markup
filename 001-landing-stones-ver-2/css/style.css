@@ -771,9 +771,23 @@ body > ymaps {
 
 .stoneBlock {
   position: relative;
-  width: 237px;
+  max-width: 238px;
+  margin-right: 26px;
   height: 203px;
   cursor: pointer;
+}
+
+.stoneBlock:hover::after {
+  content: 'Подробнее';
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 .stoneBlock img {
@@ -781,6 +795,10 @@ body > ymaps {
   left: 0;
   top: 0;
   height: 203px;
+}
+
+.stoneBlock:hover img {
+  filter: brightness(60%);
 }
 
 .stoneText {
@@ -2210,8 +2228,12 @@ input[type="text"]::placeholder, textarea::placeholder {
   .stoneBlock {
     width: 40vw !important;
     max-width: 144px;
+    margin-right: 0;
     height: calc(40vw - 20px);
     max-height: 124px;
+  }
+  .stoneBlock:hover::after {
+    display: none;
   }
   .stoneBlock img {
     height: auto;
