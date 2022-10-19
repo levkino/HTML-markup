@@ -1769,6 +1769,9 @@ input[type="text"]::placeholder, textarea::placeholder {
 .storage__map { 
   height: 400px;
 }
+.storage__map > iframe:nth-child(2) {
+  display: none !important;
+}
 .storage__map-navigate {
   position: absolute;
   top: 10px;
