@@ -2512,6 +2512,7 @@ input[type="text"]::placeholder, textarea::placeholder {
     display: none;
   }
   .map > div {
+    height: 395px;
     overflow: visible;
   }
   .map > ymaps {
